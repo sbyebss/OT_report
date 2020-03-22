@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1584854474 "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" "Witsenhausen_report" 1584854474
+["pdflatex"] 1584911623 "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" "Witsenhausen_report" 1584911623
   "/etc/texmf/web2c/texmf.cnf" 1584831648 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux" 1584854474 428 c3c54e25f2b6439985fb7aabacc19b1b ""
-  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" 1584854472 19500 4306ab14fe7c1978f05d7838cc996382 ""
+  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux" 1584911623 428 c3c54e25f2b6439985fb7aabacc19b1b ""
+  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" 1584911621 19721 2879e8cc0296e60569d50065cfd7c6b7 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1480098688 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -36,11 +36,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1584832240 2359383 9ab63e128d9bc6a2c579a1b3056af542 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1584831659 724918 bfb8b621e63d0b32c94bc48aa2ec84f1 ""
   "IEEEtran.cls" 1440627644 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "Witsenhausen_report.aux" 1584854474 428 c3c54e25f2b6439985fb7aabacc19b1b ""
-  "Witsenhausen_report.tex" 1584854472 19500 4306ab14fe7c1978f05d7838cc996382 ""
+  "Witsenhausen_report.aux" 1584911623 428 c3c54e25f2b6439985fb7aabacc19b1b ""
+  "Witsenhausen_report.tex" 1584911621 19721 2879e8cc0296e60569d50065cfd7c6b7 ""
   (generated)
   "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf"
+  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.log"
   "Witsenhausen_report.log"
   "Witsenhausen_report.aux"
   "Witsenhausen_report.pdf"
-  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.log"

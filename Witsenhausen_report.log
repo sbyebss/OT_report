@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  22 MAR 2020 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  22 MAR 2020 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -169,9 +169,9 @@ Here is how much of TeX's memory you used:
  4599 multiletter control sequences out of 15000+600000
  43571 words of font info for 78 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 26i,7n,19p,280b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26i,7n,19p,501b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (1 page, 49321 bytes).
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (1 page, 49630 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream
