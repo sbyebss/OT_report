@@ -25,4 +25,15 @@
 H.~S. Witsenhausen, ``A counterexample in stochastic optimum control,''
   \emph{SIAM Journal on Control}, vol.~6, no.~1, pp. 131--147, 1968.
 
+\bibitem{lee2001witsenhausen}
+J.~T. Lee, E.~Lau, and Y.-C. Ho, ``The witsenhausen counterexample: A
+  hierarchical search approach for nonconvex optimization problems,''
+  \emph{IEEE Transactions on Automatic Control}, vol.~46, no.~3, pp. 382--397,
+  2001.
+
+\bibitem{baglietto2001numerical}
+M.~Baglietto, T.~Parisini, and R.~Zoppoli, ``Numerical solutions to the
+  witsenhausen counterexample by approximating networks,'' \emph{IEEE
+  Transactions on Automatic Control}, vol.~46, no.~9, pp. 1471--1477, 2001.
+
 \end{thebibliography}
