@@ -52,4 +52,9 @@ Y.~Wu and S.~Verd{\'u}, ``Witsenhausen's counterexample: A view from optimal
 J.~T. Barron, ``Continuously differentiable exponential linear units,''
   \emph{arXiv preprint arXiv:1704.07483}, 2017.
 
+\bibitem{he2016deep}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' in \emph{Proceedings of the IEEE conference on computer vision
+  and pattern recognition}, 2016, pp. 770--778.
+
 \end{thebibliography}
