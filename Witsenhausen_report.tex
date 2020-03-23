@@ -225,11 +225,12 @@ This means $f$ has to be smooth enough. But interestingly, the neural network(NN
 \section{Basic Neural Network Setup}
 The whold process could be generally separated into 4 parts:\\
 1) Initialization setup for the $f$ net and $g$ net\\
-2) Train the NNs using Gaussian distribution data. In this report, all data keeps the consistency: $x_0\sim N(0,\sigma^2)$ and $\sigma=5$, 
+2) Train the NNs using Gaussian distribution data. In this report, all data keeps the consistency: $x_0\sim \mathcal{N} (0,\sigma^2)$, where $\sigma=5$, and $N\sim \mathcal{N} (0,1)$. \\
+3) Fix $f$ net and continue to train $g$ net.
 
 \subsection{Neural Network Architecture}
  Basically, two NNs are taken to represent $f$ and $g$ seperately using Pytorch structure. \footnote{The code of this project could be found at: https://github.com/sbyebss/Witsenhausen}
-For $f$ net, all layers are linear layers and CELU\cite{barron2017continuously} activation function is used since it makes the activation function continuously differentiable and improves the performance in initialization setup process.
+For $f$ net and $g$ net, all layers are linear layers and activated by CELU\cite{barron2017continuously} function, i.e. CELU($x$)=max(0,$x$)+min(0,$\alpha*($exp($x/\alpha)-1))$ is used since it makes the activation function continuously differentiable and improves the performance in initialization setup process. It is worth noting that CELU is convex and monotone increasing activation function.
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
