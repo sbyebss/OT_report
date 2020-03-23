@@ -36,4 +36,16 @@ M.~Baglietto, T.~Parisini, and R.~Zoppoli, ``Numerical solutions to the
   witsenhausen counterexample by approximating networks,'' \emph{IEEE
   Transactions on Automatic Control}, vol.~46, no.~9, pp. 1471--1477, 2001.
 
+\bibitem{amos2017input}
+B.~Amos, L.~Xu, and J.~Z. Kolter, ``Input convex neural networks,'' in
+  \emph{Proceedings of the 34th International Conference on Machine
+  Learning-Volume 70}.\hskip 1em plus 0.5em minus 0.4em\relax JMLR. org, 2017,
+  pp. 146--155.
+
+\bibitem{wu2011witsenhausen}
+Y.~Wu and S.~Verd{\'u}, ``Witsenhausen's counterexample: A view from optimal
+  transport theory,'' in \emph{2011 50th IEEE Conference on Decision and
+  Control and European Control Conference}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2011, pp. 5732--5737.
+
 \end{thebibliography}
