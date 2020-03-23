@@ -215,21 +215,24 @@ As a result, $f(x_0)=x_1$ and $g(x_1+z)=u_2$. Out goal is to minimize the quadra
 
 In equation \eqref{eq:minJ}, there is a parameter $k^2$, which in fact determines the cost gap between the linear controller and nonlinear controller\cite{baglietto2001numerical}. If $k^2$ is smaller, the gap is bigger. For better comparison with the results got by previous researchers, $k^2$ is set as 0.04 in this report.
 
-In addition, it is already known that $f(x)$ must have some strict property to be optimal \cite{wu2011witsenhausen} :\\
-\begin{adjustwidth}{1cm}{}
-\textbullet \textit{Any optimal controller f is a strictly increasing unbounded piecewise real analytic function with a real analytic inverse}
+In addition, it is already known that $f(x)$ must have some strict property to be optimal \cite{wu2011witsenhausen} :
+\begin{adjustwidth}{0.5cm}{}
+\textbullet \quad \textit{Any optimal controller f is a strictly increasing unbounded piecewise real analytic function with a real analytic inverse}
 \end{adjustwidth}
 
+This means $f$ has to be smooth enough. But interestingly, the neural network(NN) optimized result is exactly opposite from this property. The sharper the $f$ becomes (opposite to smooth), the smaller the cost is.
+
+\section{Basic Neural Network Setup}
+The whold process could be generally separated into 4 parts:\\
+1) Initialization setup for the $f$ net and $g$ net\\
+2) Train the NNs using Gaussian distribution data. In this report, all data keeps the consistency: $x_0\sim N(0,\sigma^2)$ and $\sigma=5$, 
+
+\subsection{Neural Network Architecture}
+ Basically, two NNs are taken to represent $f$ and $g$ seperately using Pytorch structure. \footnote{The code of this project could be found at: https://github.com/sbyebss/Witsenhausen}
+For $f$ net, all layers are linear layers and CELU\cite{barron2017continuously} activation function is used since it makes the activation function continuously differentiable and improves the performance in initialization setup process.
+
 % use section* for acknowledgment
-\ifCLASSOPTIONcompsoc
-  % The Computer Society usually uses the plural form
-  \section*{Acknowledgments}
-\else
-  % regular IEEE prefers the singular form
-  \section*{Acknowledgment}
-\fi
-
-
+\section*{Acknowledgment}
 Thanks to my advisor: Dr. Yongxin Chen and the other PhD studens: Rahul Singh and Qinsheng Zhang for their kind help. They give me a lot of ideas about how to improve the performance during the process of project.
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
