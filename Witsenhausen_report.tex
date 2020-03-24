@@ -243,7 +243,28 @@ For updating parameters of two NNs, we first use Stochastic Gradient Descent (SG
 We tried to use RAdam and Yogi but found Yogi didn't work well in this problem picture at all. So we finally proposed to use RAdam throughout the project.
 
 \subsection{Initialization}
-The $f$ net and $g$ net both have initialization. According to the previous researchers' work, we choose the 7-step-stair as two NN initialization.
+The $f$ net and $g$ net both have initialization. According to the previous researchers' work, we choose the 7-step-stair as basic two NN initialization. This is refering to the best result got from past researchers and the step parameters are from Yu-Chi Ho's group\cite{liu2019variance} as below:
+\begin{equation}\label{7-stairs}
+    f(x)=
+    \begin{cases}
+          0 & 0 \leq x < 3.25 \\
+          6.5 & 3.25 \leq x < 9.90\\
+          13.2 & 9.90 \leq x<16.65\\
+          19.9 & 16.65 \leq x.
+  \end{cases}
+\end{equation}
+According to symmetry, the $x \geq 0$ part of $f(x)$ could be obtained. We also tried segmented stair, which parameters are also obtained from Yu-Chi Ho's group\cite{lee2001witsenhausen}:
+\begin{equation}\label{segmented-7-stairs}
+  f(x)=
+  \begin{cases}
+        0 & 0 \leq x < 3.25 \\
+        6.5 & 3.25 \leq x < 9.90\\
+        13.2 & 9.90 \leq x<16.65\\
+        19.9 & 16.65 \leq x.
+\end{cases}
+\end{equation}
+
+To distinguish, we call \eqref{7-stairs} the 7-stair-init and 
 
 \section*{Information for code}
 
