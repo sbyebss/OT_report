@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 04:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 04:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -192,7 +192,11 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
+) (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
+
+LaTeX Warning: Label `fig:definition' multiply defined.
+
+)
 \openout1 = `Witsenhausen_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -272,47 +276,52 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
 <images/Wits_definition.png, id=1, 425.59pt x 180.675pt>
 File: images/Wits_definition.png Graphic file (type png)
 <use images/Wits_definition.png>
-Package pdftex.def Info: images/Wits_definition.png  used on input line 199.
+Package pdftex.def Info: images/Wits_definition.png  used on input line 134.
 (pdftex.def)             Requested size: 170.71652pt x 72.47548pt.
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 204.
-LaTeX Font Info:    Try loading font information for U+msa on input line 204.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 139.
+LaTeX Font Info:    Try loading font information for U+msa on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 204.
+LaTeX Font Info:    Try loading font information for U+msb on input line 139.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 220.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 155.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.03749> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 [][][]\OT1/ptm/m/n/8.03 The code of this project could be found at:
  []
 
+<images/ICNN.png, id=3, 413.545pt x 157.58875pt>
+File: images/ICNN.png Graphic file (type png)
+<use images/ICNN.png>
+Package pdftex.def Info: images/ICNN.png  used on input line 177.
+(pdftex.def)             Requested size: 227.62204pt x 86.7414pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png>]
-Underfull \hbox (badness 7415) in paragraph at lines 242--242
+Underfull \hbox (badness 7415) in paragraph at lines 187--187
 [][][]\OT1/ptm/m/n/8.03 The py-torch op-ti-mizer source code could be found here:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 []\OT1/ptm/m/n/10.03749 Different train pro-cess are edited in
  []
 
-(/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
+[2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png>] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
 Underfull \hbox (badness 2351) in paragraph at lines 61--63
 []\OT1/ptm/m/n/8.03 L. Luo, Y. Xiong, Y. Liu, and X. Sun, ``Adap-tive gra-di-ent
  []
 
-[2])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -326,20 +335,24 @@ Before submitting the final camera ready copy, remember to:
 
 [3
 
-] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux) ) 
+] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3394 strings out of 494923
- 52074 string characters out of 6180742
- 113961 words of memory out of 5000000
- 6656 multiletter control sequences out of 15000+600000
+ 3399 strings out of 494923
+ 52161 string characters out of 6180742
+ 112000 words of memory out of 5000000
+ 6660 multiletter control sequences out of 15000+600000
  40880 words of font info for 78 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  41i,8n,26p,814b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (3 pages, 171114 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (3 pages, 198584 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
