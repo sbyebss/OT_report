@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex Witsenhausen_report"] 1584984000 "Witsenhausen_report.aux" "Witsenhausen_report.bbl" "Witsenhausen_report" 1585002068
+["bibtex Witsenhausen_report"] 1585003875 "Witsenhausen_report.aux" "Witsenhausen_report.bbl" "Witsenhausen_report" 1585005608
   "./IEEEtran.bst" 1584915981 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "Witsenhausen_report.aux" 1585002068 1223 cf789a8e0f081878feb995d3ebbb38b5 ""
+  "Witsenhausen_report.aux" 1585005608 1479 61963bf9e9fb60158339c305bc27d1a8 ""
   "Witsenhausen_report.bcf" 0 -1 0 ""
-  "annot_report.bib" 1584983475 2264 dadb91d10eddf131bffab2858f737868 ""
+  "annot_report.bib" 1585002376 3078 eed0152f53a010cac5b6e58381b7ae0e ""
   (generated)
   "Witsenhausen_report.blg"
   "Witsenhausen_report.bbl"
-["pdflatex"] 1585002067 "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" "Witsenhausen_report" 1585002068
+["pdflatex"] 1585005608 "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" "Witsenhausen_report" 1585005608
   "/etc/texmf/web2c/texmf.cnf" 1584831648 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux" 1585002068 1223 cf789a8e0f081878feb995d3ebbb38b5 ""
-  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" 1585002065 11990 d4ac3e8a68b861c9c173d66e3a7b0d32 ""
+  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux" 1585005608 1479 61963bf9e9fb60158339c305bc27d1a8 ""
+  "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex" 1585005606 12922 4c70e013c4bd15ad96d37f714e095c19 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1480098688 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -81,13 +81,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1584832240 2359383 9ab63e128d9bc6a2c579a1b3056af542 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1584831659 724918 bfb8b621e63d0b32c94bc48aa2ec84f1 ""
   "IEEEtran.cls" 1440627644 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "Witsenhausen_report.aux" 1585002068 1223 cf789a8e0f081878feb995d3ebbb38b5 ""
-  "Witsenhausen_report.bbl" 1584984000 2499 3e806b4c01ccfcd563b1062937c438ab "bibtex Witsenhausen_report"
-  "Witsenhausen_report.tex" 1585002065 11990 d4ac3e8a68b861c9c173d66e3a7b0d32 ""
+  "Witsenhausen_report.aux" 1585005608 1479 61963bf9e9fb60158339c305bc27d1a8 ""
+  "Witsenhausen_report.bbl" 1585003875 3102 615d11f81c77c52c047c4a1a9008c4fc "bibtex Witsenhausen_report"
+  "Witsenhausen_report.tex" 1585005606 12922 4c70e013c4bd15ad96d37f714e095c19 ""
   "images/Wits_definition.png" 1584936932 59403 9d55d1d4656645d741637f84ae1a862f ""
   (generated)
-  "Witsenhausen_report.log"
-  "Witsenhausen_report.pdf"
   "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf"
   "Witsenhausen_report.aux"
+  "Witsenhausen_report.log"
   "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.log"
+  "Witsenhausen_report.pdf"

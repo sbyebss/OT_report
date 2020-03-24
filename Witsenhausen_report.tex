@@ -239,10 +239,24 @@ is used since it makes the activation function continuously differentiable and i
 For $f$ net structure, we tried ICNN as $f$ net's integral function:$F$ net, i.e. $f$ NN works as the derivative function of the function represented by $F$ NN. We also have tried ResNet\cite{he2016deep} since it performs much better than ordinary linear layer NNs. 
 
 \subsection{optimizer}
-For updating parameters of two NNs, we first use Stochastic Gradient Descent (SGD) and then used ADAM. In comparison, SGD performs much slower and becomes not stable while entering plateau of loss decreasing. ADAM increases the stability and speed a lot. So we focus on the better optimizer compared to ADAM later. There were a lot of variation of ADAM during the past several years. We mainly care whether the optimizer could lead the NN to the global optimizer.
+For updating parameters of two NNs, we first use Stochastic Gradient Descent (SGD) and then used ADAM. In comparison, SGD performs much slower and becomes not stable while entering plateau of loss decreasing. ADAM increases the stability and speed a lot. So we focus on the better optimizer compared to ADAM later. There were a lot of variation of ADAM during the past several years. We mainly care whether the optimizer could lead the NN to the global optimizer. Some outstanding optimizers came out like AdaBound\cite{luo2019adaptive}, RAdam\cite{liu2019variance} and Yogi\cite{zaheer2018adaptive}. \footnote{The pytorch optimizer source code could be found here: https://github.com/jettify/pytorch-optimizer}
+We tried to use RAdam and Yogi but found Yogi didn't work well in this problem picture at all. So we finally proposed to use RAdam throughout the project.
+
+\subsection{Initialization}
+The $f$ net and $g$ net both have initialization. According to the previous researchers' work, we choose the 7-step-stair as two NN initialization.
+
+\section*{Information for code}
+
+Different train process are edited in train\underline{ }\textit{specificName}.py file. 
+
+The modules folder saves the network structure and ICNN weight clamping function.
+
+The runs folder record the tensorboard loss file. Importing those files into tensorboard, we can compare the loss decreasing trend in one plot.
+
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
+
 Thanks to my advisor: Dr. Yongxin Chen and the other PhD studens: Rahul Singh and Qinsheng Zhang for their kind help. They give me a lot of ideas about how to improve the performance during the process of project.
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
