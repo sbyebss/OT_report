@@ -179,9 +179,11 @@ For $f$ net structure, we tried ICNN as $f$ net's integral function:$F$ net, i.e
   \label{fig:definition}
 \end{figure}
 
-The function $f$ is convex provided that all $W_{1:k-1}^{(z)}$ are non-negative and all activation functions are convex and non-decreasing. To be noticed, sometimes we cancel the non-negative weight restriction but the monotone property of $f$ NN doesn't change. In the meantime, we could use this as a way to improve the loss decreasing.
+The function $f$ is convex provided that all $W_{1:k-1}^{(z)}$ are non-negative and all activation functions are convex and non-decreasing.\cite{amos2017input} To be noticed, sometimes we cancel the non-negative weight restriction but the monotone property of $f$ NN doesn't change. In the meantime, we could use this as a way to improve the loss decreasing.
 
 We also have tried ResNet\cite{he2016deep} since it performs much better than ordinary linear layer NNs. 
+
+On the other hand, the $g$ net is treated as normal linear layer NN if $f$ is ICNN structure and ResNet if $f$ is ReNet. The experiment proves that $f$ net is much more important than $g$ net for loss decreasing.
 
 \subsection{Optimizer}
 For updating parameters of two NNs, we first use Stochastic Gradient Descent (SGD) and then used ADAM. In comparison, SGD performs much slower and becomes not stable while entering plateau of loss decreasing. ADAM increases the stability and speed a lot. So we focus on the better optimizer compared to ADAM later. There were a lot of variation of ADAM during the past several years. We mainly care whether the optimizer could lead the NN to the global optimizer. Some outstanding optimizers came out like AdaBound\cite{luo2019adaptive}, RAdam\cite{liu2019variance} and Yogi\cite{zaheer2018adaptive}. \footnote{The pytorch optimizer source code could be found here: https://github.com/jettify/pytorch-optimizer}
@@ -221,12 +223,25 @@ According to symmetry, the $x \geq 0$ part of $f(x)$ could be obtained. We also 
 
 To distinguish, we call \eqref{7-stairs} as the 7-stair-init and \eqref{segmented-7-stairs} as the segmented-7-stair-init.
 
+We mark $f_0$ as the result from initialization process for $f$ and the same for $g_0$
+It is worth mentioning that while doing initialization training for ICNN $f$ net, if we get the loss by comparing $F$ NN's derivative with the \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as below:
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{images/f_ICNN_withoutInit.png}
+  \caption{$f_0$ from initialization process with criteria between $F$ derivative and the 7-stairs-init directly}
+  \label{fig:train result}
+\end{figure}
+But if we treat the loss criteria as comparison between $F$ with the piecewise linear function xxx, the $f_0$ would becomes much better:
+% quadratic plot
+
 \subsection{Test Data Set}
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
 
 \section{Experiment Result}
 \subsection{ICNN structure}
-In this subsection, we present the results of setting $f$ NN as ICNN.
+In this subsection, we present the results of setting $f$ NN as ICNN. \\
+1) No initialization:
+The $f$ net could only go to two-step 
 
 \section*{Information for code}
 
