@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 05:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,6 +196,9 @@ Package: cite 2015/02/27  v 5.5
 
 LaTeX Warning: Label `fig:definition' multiply defined.
 
+
+LaTeX Warning: Label `fig:train result' multiply defined.
+
 )
 \openout1 = `Witsenhausen_report.aux'.
 
@@ -311,14 +314,28 @@ Underfull \hbox (badness 7415) in paragraph at lines 189--189
 [][][]\OT1/ptm/m/n/8.03 The py-torch op-ti-mizer source code could be found here:
  []
 
-<images/f_ICNN_withoutInit.png, id=19, 884.30376pt x 671.50874pt>
+<images/piecewise_linear.png, id=19, 395.4775pt x 256.96pt>
+File: images/piecewise_linear.png Graphic file (type png)
+<use images/piecewise_linear.png>
+Package pdftex.def Info: images/piecewise_linear.png  used on input line 229.
+(pdftex.def)             Requested size: 227.62204pt x 147.89592pt.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 230.
+<images/f_ICNN_withoutInit.png, id=20, 848.16875pt x 635.37375pt>
 File: images/f_ICNN_withoutInit.png Graphic file (type png)
 <use images/f_ICNN_withoutInit.png>
-Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 230.
-(pdftex.def)             Requested size: 227.62204pt x 172.84627pt.
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 231.
-[2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 237.
+(pdftex.def)             Requested size: 227.62204pt x 170.51584pt.
+[2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png>]
+<images/ICNN_f_init.png, id=31, 448.67625pt x 323.2075pt>
+File: images/ICNN_f_init.png Graphic file (type png)
+<use images/ICNN_f_init.png>
+Package pdftex.def Info: images/ICNN_f_init.png  used on input line 245.
+(pdftex.def)             Requested size: 227.62204pt x 163.96565pt.
+
+Underfull \vbox (badness 1917) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 []\OT1/ptm/m/n/10.03749 Different train pro-cess are edited in
  []
 
@@ -327,7 +344,7 @@ Underfull \hbox (badness 2351) in paragraph at lines 61--63
 []\OT1/ptm/m/n/8.03 L. Luo, Y. Xiong, Y. Liu, and X. Sun, ``Adap-tive gra-di-ent
  []
 
-)
+[3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -339,24 +356,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
+[4
+
+] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3437 strings out of 494923
- 52766 string characters out of 6180742
- 112008 words of memory out of 5000000
- 6690 multiletter control sequences out of 15000+600000
+ 3448 strings out of 494923
+ 53060 string characters out of 6180742
+ 113016 words of memory out of 5000000
+ 6699 multiletter control sequences out of 15000+600000
  44624 words of font info for 93 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  41i,8n,26p,814b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (3 pages, 249598 bytes).
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (4 pages, 275200 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

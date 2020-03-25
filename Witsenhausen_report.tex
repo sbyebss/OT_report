@@ -223,16 +223,29 @@ According to symmetry, the $x \geq 0$ part of $f(x)$ could be obtained. We also 
 
 To distinguish, we call \eqref{7-stairs} as the 7-stair-init and \eqref{segmented-7-stairs} as the segmented-7-stair-init.
 
-We mark $f_0$ as the result from initialization process for $f$ and the same for $g_0$
-It is worth mentioning that while doing initialization training for ICNN $f$ net, if we get the loss by comparing $F$ NN's derivative with the \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as below:
+We mark $f_0$ as the result from initialization process for $f$ and the same for $g_0$. And we mark the integral function of $f_0$ as $F_0$. For example, if the $f_0$ is \eqref{7-stairs}, then its corresponding $F_0$ looks like below:
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{images/piecewise_linear.png}
+  \caption{The corresponding $F_0$ when $f_0$ is taken as Equation \eqref{7-stairs}}
+  \label{fig:generate_data.ipynb}
+\end{figure}
+
+It is worth mentioning that while doing initialization training for ICNN $f$ net,we are not training $f_0$ directly but training $F_0$. So the loss criteria in the initialization training may be two ways. Firstly, if we get the loss by comparing $F$ NN's derivative with the equation \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as below:
 \begin{figure}[htp]
   \centering
   \includegraphics[width=8cm]{images/f_ICNN_withoutInit.png}
-  \caption{$f_0$ from initialization process with criteria between $F$ derivative and the 7-stairs-init directly}
+  \caption{$f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly}
   \label{fig:train result}
 \end{figure}
-But if we treat the loss criteria as comparison between $F$ with the piecewise linear function xxx, the $f_0$ would becomes much better:
-% quadratic plot
+
+Secondly, if we treat the loss criteria as comparison between $F$ with the piecewise linear function $F_0$, the $f_0$ would becomes much better:
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{images/ICNN_f_init.png}
+  \caption{$f_0$ from initialization process with criteria between $F_0$ and ideal integral function}
+  \label{fig:train result}
+\end{figure}
 
 \subsection{Test Data Set}
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
@@ -251,7 +264,7 @@ The \textit{modules} folder saves the network structure and ICNN weight clamping
 
 The \textit{runs} folder record the tensorboard loss file. Importing those files into tensorboard, we can compare the loss decreasing trend in one plot.
 
-The \textit{data} folder saves the main body training data as well as initialization training data.
+The \textit{data} folder saves the main body training data as well as initialization training data. Specifically, the generate\underline{ }data.ipynb file stores the process and result of generating all kinds of data needed in this project.
 
 The \textit{test} folder saves some test files which verified some important rudimentary ideas.
 
