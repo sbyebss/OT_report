@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 21:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -188,10 +188,42 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count106
 \cp@tempcnt=\count107
-) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen137
+\extrarowheight=\dimen138
+\NC@list=\toks21
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\TX@col@width=\dimen139
+\TX@old@table=\dimen140
+\TX@old@col=\dimen141
+\TX@target=\dimen142
+\TX@delta=\dimen143
+\TX@cols=\count108
+\TX@ftn=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen144
+\lightrulewidth=\dimen145
+\cmidrulewidth=\dimen146
+\belowrulesep=\dimen147
+\belowbottomsep=\dimen148
+\aboverulesep=\dimen149
+\abovetopsep=\dimen150
+\cmidrulesep=\dimen151
+\cmidrulekern=\dimen152
+\defaultaddspace=\dimen153
+\@cmidla=\count109
+\@cmidlb=\count110
+\@aboverulesep=\dimen154
+\@belowrulesep=\dimen155
+\@thisruleclass=\count111
+\@lastruleclass=\count112
+\@thisrulewidth=\dimen156
 ) (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
 
 LaTeX Warning: Label `fig:definition' multiply defined.
@@ -202,33 +234,33 @@ LaTeX Warning: Label `fig:train result' multiply defined.
 )
 \openout1 = `Witsenhausen_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 -- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen137
+\scratchcounter=\count113
+\scratchdimen=\dimen157
 \scratchbox=\box30
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen138
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks22
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen158
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -270,81 +302,81 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 76.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 41.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 <images/Wits_definition.png, id=1, 425.59pt x 180.675pt>
 File: images/Wits_definition.png Graphic file (type png)
 <use images/Wits_definition.png>
-Package pdftex.def Info: images/Wits_definition.png  used on input line 134.
+Package pdftex.def Info: images/Wits_definition.png  used on input line 99.
 (pdftex.def)             Requested size: 170.71652pt x 72.47548pt.
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 139.
-LaTeX Font Info:    Try loading font information for U+msa on input line 139.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 104.
+LaTeX Font Info:    Try loading font information for U+msa on input line 104.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 139.
+LaTeX Font Info:    Try loading font information for U+msb on input line 104.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 155.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 120.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.03749> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 [][][]\OT1/ptm/m/n/8.03 The code of this project could be found at:
  []
 
 <images/ICNN.png, id=3, 413.545pt x 157.58875pt>
 File: images/ICNN.png Graphic file (type png)
 <use images/ICNN.png>
-Package pdftex.def Info: images/ICNN.png  used on input line 177.
+Package pdftex.def Info: images/ICNN.png  used on input line 142.
 (pdftex.def)             Requested size: 227.62204pt x 86.7414pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png>]
-Underfull \hbox (badness 7415) in paragraph at lines 189--189
+Underfull \hbox (badness 7415) in paragraph at lines 154--154
 [][][]\OT1/ptm/m/n/8.03 The py-torch op-ti-mizer source code could be found here:
  []
 
 <images/piecewise_linear.png, id=19, 395.4775pt x 256.96pt>
 File: images/piecewise_linear.png Graphic file (type png)
 <use images/piecewise_linear.png>
-Package pdftex.def Info: images/piecewise_linear.png  used on input line 229.
+Package pdftex.def Info: images/piecewise_linear.png  used on input line 194.
 (pdftex.def)             Requested size: 227.62204pt x 147.89592pt.
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 230.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 195.
 <images/f_ICNN_withoutInit.png, id=20, 848.16875pt x 635.37375pt>
 File: images/f_ICNN_withoutInit.png Graphic file (type png)
 <use images/f_ICNN_withoutInit.png>
-Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 237.
+Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 202.
 (pdftex.def)             Requested size: 227.62204pt x 170.51584pt.
 [2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png>]
 <images/ICNN_f_init.png, id=31, 448.67625pt x 323.2075pt>
 File: images/ICNN_f_init.png Graphic file (type png)
 <use images/ICNN_f_init.png>
-Package pdftex.def Info: images/ICNN_f_init.png  used on input line 245.
+Package pdftex.def Info: images/ICNN_f_init.png  used on input line 210.
 (pdftex.def)             Requested size: 227.62204pt x 163.96565pt.
 
 Underfull \vbox (badness 1917) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 []\OT1/ptm/m/n/10.03749 Different train pro-cess are edited in
  []
 
-(/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
+(/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl [3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png>]
 Underfull \hbox (badness 2351) in paragraph at lines 61--63
 []\OT1/ptm/m/n/8.03 L. Luo, Y. Xiong, Y. Liu, and X. Sun, ``Adap-tive gra-di-ent
  []
 
-[3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png>])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -364,18 +396,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3448 strings out of 494923
- 53060 string characters out of 6180742
- 113016 words of memory out of 5000000
- 6699 multiletter control sequences out of 15000+600000
- 44624 words of font info for 93 fonts, out of 8000000 for 9000
+ 3517 strings out of 494923
+ 53889 string characters out of 6180742
+ 113830 words of memory out of 5000000
+ 6757 multiletter control sequences out of 15000+600000
+ 48551 words of font info for 97 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  41i,8n,26p,814b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (4 pages, 275200 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (4 pages, 285748 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

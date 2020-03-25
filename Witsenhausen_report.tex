@@ -7,48 +7,23 @@
 % \documentclass[conference,compsoc]{../sty/IEEEtran}
 
 
-
-% Some very useful LaTeX packages include:
-% (uncomment the ones you want to load)
-
-
-% *** MISC UTILITY PACKAGES ***
+% *** UTILITY PACKAGES ***
 \usepackage{graphicx}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{changepage}
+\usepackage{tabularx,booktabs}
 \DeclareMathOperator{\E}{\mathbb{E}}
-
-%\usepackage{ifpdf}
-% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
-% compilation based on whether the output is pdf or dvi.
-% usage:
-% \ifpdf
-%   % pdf code
-% \else
-%   % dvi code
-% \fi
-% The latest version of ifpdf.sty can be obtained from:
-% http://www.ctan.org/pkg/ifpdf
-% Also, note that IEEEtran.cls V1.7 and later provides a builtin
-% \ifCLASSINFOpdf conditional that works the same way.
-% When switching from latex to pdflatex and vice-versa, the compiler may
-% have to be run twice to clear warning/error messages.
-
-
-
-
-
 
 % *** CITATION PACKAGES ***
 %
-\ifCLASSOPTIONcompsoc
-  % IEEE Computer Society needs nocompress option
-  % requires cite.sty v4.0 or later (November 2003)
-  \usepackage[nocompress]{cite}
-\else
-  % normal IEEE
-  \usepackage{cite}
-\fi
+% \ifCLASSOPTIONcompsoc
+%   % IEEE Computer Society needs nocompress option
+%   % requires cite.sty v4.0 or later (November 2003)
+%   \usepackage[nocompress]{cite}
+% \else
+%   % normal IEEE
+%   \usepackage{cite}
+% \fi
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -57,17 +32,7 @@
 \begin{document}
 %
 % paper title
-% Titles are generally capitalized except for words such as a, an, and, as,
-% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
-% not capitalized unless they are the first or last word of the title.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
-\title{Neural Network solutions to Witsenhausen problem}
-
-
-% author names and affiliations
-% use a multiple column layout for up to three different
-% affiliations
+\title{Neural Network Solutions to Witsenhausen problem}
 \author{\IEEEauthorblockN{Jiaojiao Fan}
 \IEEEauthorblockA{GTID:903565753\\ Email: jiaojiaofan@gatech.edu}}
 
@@ -254,7 +219,27 @@ In the process of training, we choose to get the test set loss for every 1000 ep
 \subsection{ICNN structure}
 In this subsection, we present the results of setting $f$ NN as ICNN. \\
 1) No initialization:
-The $f$ net could only go to two-step 
+The $f$ net could only go to two-step and total loss $J$ is around 0.36. So does $g$ net. This proves that the final NN rely on the initialization a lot. And the optimizer couldn't lead the $f$ net to very complex steps shape without initialization.\\
+2) 7-step-stair Initialization:
+
+\begin{table}[htbp]
+  \caption{$J(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure }
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  \textbf{Table}&\multicolumn{3}{|c|}{\textbf{Optimizer}} \\
+  \cline{2-4} 
+  \textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+  \hline
+  copy& More table copy& &  \\
+
+  \hline
+  
+\end{tabular}
+  \label{tab1e results}
+  \end{center}
+  \end{table}
+
 
 \section*{Information for code}
 
