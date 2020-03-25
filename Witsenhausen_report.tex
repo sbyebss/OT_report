@@ -272,7 +272,8 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
   
   It can be seen that RAdam and Adam perform best and RAdam is more stable and faster than Adam. As a result, afterwards if there is no more specification, we always use RAdam as the optimizer. This is very foundamental result for the experiments afterwards.\\
   3) \textbf{Segmented-7-stair-init}:
-  In this part, we began trying not to use ICNN weights clamping and the optimizer is always RAdam. 
+  In this part, we began trying not to use ICNN weights clamping and the optimizer is always RAdam. \\
+
   % \begin{table}[htbp]
   %   \caption{$J^{C}(f,g)$ Comparison When $f$ is with segmented-7-stair-init and ICNN Structure}
   %   \begin{center}
@@ -293,21 +294,21 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
 
 \begin{table}[htbp]
   \caption{$J^{C}(f,g)$ Comparison When $f$ is with segmented-7-stair-init and ICNN Structure}
-    \begin{center}
+  \begin{center}
   \begin{tabular}{|c|l|c|l|l|l}
   \cline{1-5}
-  \multicolumn{1}{|l|}{f structure}                                                                & g structure                                              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}ICNN \\ Clamping\end{tabular}} & J\_C   & Remark                                                                                      &  \\ \cline{1-5}
+  \multicolumn{1}{|l|}{$f$ structure}                                                                & $g$ structure                                              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}ICNN \\ Clamping\end{tabular}} & $J^C$   & Remark                                                                                      &  \\ \cline{1-5}
   \multirow{4}{*}{6 layers}                                                                        & \begin{tabular}[c]{@{}l@{}}3 layer\\ 100n/l\end{tabular} & Yes                                                                           & 0.2050 &                                                                                             &  \\ \cline{2-5}
                                                                                                    & \begin{tabular}[c]{@{}l@{}}3 layer\\ 100n/l\end{tabular} & No                                                                            & 0.1865 &                                                                                             &  \\ \cline{2-5}
-                                                                                                   & \begin{tabular}[c]{@{}l@{}}3 layer\\ 300n/l\end{tabular} & No                                                                            & 0.1758 & \begin{tabular}[c]{@{}l@{}}fix f, then\\ update g:\\ cost-\textgreater{}0.1754\end{tabular} &  \\ \cline{2-5}
-                                                                                                   & \begin{tabular}[c]{@{}l@{}}6 layer\\ 300n/l\end{tabular} & No                                                                            & 0.1739 & \begin{tabular}[c]{@{}l@{}}fix f, then\\ update g:\\ cost-\textgreater{}0.1746\end{tabular} &  \\ \cline{1-5}
+                                                                                                   & \begin{tabular}[c]{@{}l@{}}3 layer\\ 300n/l\end{tabular} & No                                                                            & 0.1758 & \begin{tabular}[c]{@{}l@{}}fix f, then\\ update g:\\ $J^C\rightarrow$ 0.1754\end{tabular} &  \\ \cline{2-5}
+                                                                                                   & \begin{tabular}[c]{@{}l@{}}6 layer\\ 300n/l\end{tabular} & No                                                                            & 0.1739 & \begin{tabular}[c]{@{}l@{}}fix f, then\\ update g:\\ $J^C\rightarrow$ 0.1746\end{tabular} &  \\ \cline{1-5}
   \multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}fixed segmented\\ 7 stair function\end{tabular}} & \begin{tabular}[c]{@{}l@{}}6 layer\\ 300n/l\end{tabular} & No                                                                            & 0.1670 &                                                                                             &  \\ \cline{1-5}
   \end{tabular}
   \label{segmented-7-stair-init table results}
   \end{center}
   \end{table}
   
-  n/l means the number of units each layer.
+  In the Table 2, n/l means the number of units each layer.
 
 \section*{Information for code}
 
