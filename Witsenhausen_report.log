@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  25 MAR 2020 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  25 MAR 2020 19:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -230,6 +230,33 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@cntb=\count113
 \multirow@dima=\skip50
 \bigstrutjot=\dimen157
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen158
+\captionmargin@=\dimen159
+\captionwidth=\dimen160
+\caption@tempdima=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize {#1.}\nobreakspace \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\fi \fi .
+\c@ContinuedFloat=\count114
+)
+\c@subfigure=\count115
+\c@subtable=\count116
 ) (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
 
 LaTeX Warning: Label `fig:definition' multiply defined.
@@ -237,35 +264,38 @@ LaTeX Warning: Label `fig:definition' multiply defined.
 
 LaTeX Warning: Label `fig:train result' multiply defined.
 
+
+LaTeX Warning: Label `fig:train result' multiply defined.
+
 )
 \openout1 = `Witsenhausen_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 -- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen158
+\scratchcounter=\count117
+\scratchdimen=\dimen165
 \scratchbox=\box30
-\nofMPsegments=\count115
-\nofMParguments=\count116
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen159
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen166
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -308,90 +338,122 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 42.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 43.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 <images/Wits_definition.png, id=1, 425.59pt x 180.675pt>
 File: images/Wits_definition.png Graphic file (type png)
 <use images/Wits_definition.png>
-Package pdftex.def Info: images/Wits_definition.png  used on input line 100.
+Package pdftex.def Info: images/Wits_definition.png  used on input line 101.
 (pdftex.def)             Requested size: 170.71652pt x 72.47548pt.
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 105.
-LaTeX Font Info:    Try loading font information for U+msa on input line 105.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 106.
+LaTeX Font Info:    Try loading font information for U+msa on input line 106.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 105.
+LaTeX Font Info:    Try loading font information for U+msb on input line 106.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 140.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 141.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.03749> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 [][][]\OT1/ptm/m/n/8.03 The code of this project could be found at:
  []
 
 <images/ICNN.png, id=23, 413.545pt x 157.58875pt>
 File: images/ICNN.png Graphic file (type png)
 <use images/ICNN.png>
-Package pdftex.def Info: images/ICNN.png  used on input line 162.
+Package pdftex.def Info: images/ICNN.png  used on input line 163.
 (pdftex.def)             Requested size: 227.62204pt x 86.7414pt.
 
-Underfull \hbox (badness 7415) in paragraph at lines 174--174
+Underfull \hbox (badness 7415) in paragraph at lines 175--175
 [][][]\OT1/ptm/m/n/8.03 The py-torch op-ti-mizer source code could be found here:
  []
 
 <images/piecewise_linear.png, id=24, 395.4775pt x 256.96pt>
 File: images/piecewise_linear.png Graphic file (type png)
 <use images/piecewise_linear.png>
-Package pdftex.def Info: images/piecewise_linear.png  used on input line 214.
-(pdftex.def)             Requested size: 227.62204pt x 147.89592pt.
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 215.
+Package pdftex.def Info: images/piecewise_linear.png  used on input line 215.
+(pdftex.def)             Requested size: 170.71652pt x 110.92194pt.
 <images/f_ICNN_withoutInit.png, id=25, 848.16875pt x 635.37375pt>
 File: images/f_ICNN_withoutInit.png Graphic file (type png)
 <use images/f_ICNN_withoutInit.png>
-Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 222.
-(pdftex.def)             Requested size: 227.62204pt x 170.51584pt.
+Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 223.
+(pdftex.def)             Requested size: 170.71652pt x 127.88687pt.
 [2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png>]
 <images/ICNN_f_init.png, id=31, 448.67625pt x 323.2075pt>
 File: images/ICNN_f_init.png Graphic file (type png)
 <use images/ICNN_f_init.png>
-Package pdftex.def Info: images/ICNN_f_init.png  used on input line 230.
-(pdftex.def)             Requested size: 227.62204pt x 163.96565pt.
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 245.
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--276
+Package pdftex.def Info: images/ICNN_f_init.png  used on input line 231.
+(pdftex.def)             Requested size: 170.71652pt x 122.973pt.
+<images/segmented_f_init.png, id=32, 533.995pt x 371.3875pt>
+File: images/segmented_f_init.png Graphic file (type png)
+<use images/segmented_f_init.png>
+Package pdftex.def Info: images/segmented_f_init.png  used on input line 238.
+(pdftex.def)             Requested size: 170.71652pt x 118.73308pt.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 253.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 265.
+<images/3-step-Adam.png, id=33, 394.47375pt x 265.99374pt>
+File: images/3-step-Adam.png Graphic file (type png)
+<use images/3-step-Adam.png>
+Package pdftex.def Info: images/3-step-Adam.png  used on input line 285.
+(pdftex.def)             Requested size: 101.17645pt x 68.22322pt.
+LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 286.
+<images/4-step-Adam.png, id=34, 515.9275pt x 342.27875pt>
+File: images/4-step-Adam.png Graphic file (type png)
+<use images/4-step-Adam.png>
+Package pdftex.def Info: images/4-step-Adam.png  used on input line 293.
+(pdftex.def)             Requested size: 101.17645pt x 67.12273pt.
+ [3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/segmented_f_init.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
 
-Overfull \hbox (19.82817pt too wide) in paragraph at lines 280--290
+Overfull \hbox (19.82817pt too wide) in paragraph at lines 307--317
  [] 
  []
 
-[3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png>]
-<images/Table2_last_column_continue_to_update_f.png, id=43, 509.905pt x 367.3725pt>
+<images/fixedFfunction.png, id=45, 538.01pt x 362.35374pt>
+File: images/fixedFfunction.png Graphic file (type png)
+<use images/fixedFfunction.png>
+Package pdftex.def Info: images/fixedFfunction.png  used on input line 325.
+(pdftex.def)             Requested size: 170.71652pt x 114.97691pt.
+<images/g_fixedFfunction.png, id=46, 274.02374pt x 183.68625pt>
+File: images/g_fixedFfunction.png Graphic file (type png)
+<use images/g_fixedFfunction.png>
+Package pdftex.def Info: images/g_fixedFfunction.png  used on input line 332.
+(pdftex.def)             Requested size: 170.71652pt x 114.43924pt.
+<images/Table2_last_column_continue_to_update_f.png, id=47, 509.905pt x 367.3725pt>
 File: images/Table2_last_column_continue_to_update_f.png Graphic file (type png)
 <use images/Table2_last_column_continue_to_update_f.png>
-Package pdftex.def Info: images/Table2_last_column_continue_to_update_f.png  used on input line 298.
+Package pdftex.def Info: images/Table2_last_column_continue_to_update_f.png  used on input line 340.
 (pdftex.def)             Requested size: 170.71652pt x 122.99907pt.
+<images/resnet_best_result.png, id=48, 520.94624pt x 690.58pt>
+File: images/resnet_best_result.png Graphic file (type png)
+<use images/resnet_best_result.png>
+Package pdftex.def Info: images/resnet_best_result.png  used on input line 351.
+(pdftex.def)             Requested size: 170.71652pt x 226.30095pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
 []\OT1/ptm/m/n/10.03749 Different train pro-cess are edited in
  []
 
-(/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl [4 </home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png>]
+[4 </home/fjj/Study_hard/Optimal Transport/project/Report/images/3-step-Adam.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/4-step-Adam.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/fixedFfunction.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/g_fixedFfunction.png>] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
 Underfull \hbox (badness 2351) in paragraph at lines 61--63
 []\OT1/ptm/m/n/8.03 L. Luo, Y. Xiong, Y. Liu, and X. Sun, ``Adap-tive gra-di-ent
  []
@@ -408,26 +470,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
-] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
+[5 </home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/resnet_best_result.png>] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3603 strings out of 494923
- 55462 string characters out of 6180742
- 118391 words of memory out of 5000000
- 6836 multiletter control sequences out of 15000+600000
- 51384 words of font info for 109 fonts, out of 8000000 for 9000
+ 4784 strings out of 494923
+ 77067 string characters out of 6180742
+ 142577 words of memory out of 5000000
+ 7999 multiletter control sequences out of 15000+600000
+ 53574 words of font info for 120 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 41i,15n,26p,814b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (5 pages, 347341 bytes).
+ 42i,15n,40p,814b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (5 pages, 439811 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

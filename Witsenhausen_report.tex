@@ -13,6 +13,7 @@
 \usepackage{changepage}
 \usepackage{tabularx,booktabs}
 \usepackage{multirow}
+\usepackage{subcaption}
 \DeclareMathOperator{\E}{\mathbb{E}}
 
 % *** CITATION PACKAGES ***
@@ -211,24 +212,31 @@ To distinguish, we call \eqref{7-stairs} as the 7-stair-init and \eqref{segmente
 We mark $f_0$ as the result from initialization process for $f$ and the same for $g_0$. And we mark the integral function of $f_0$ as $F_0$. For example, if the $f_0$ is \eqref{7-stairs}, then its corresponding $F_0$ looks like below:
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=8cm]{images/piecewise_linear.png}
+  \includegraphics[width=6cm]{images/piecewise_linear.png}
   \caption{The corresponding $F_0$ when $f_0$ is taken as Equation \eqref{7-stairs}}
   \label{fig:generate_data.ipynb}
 \end{figure}
 
-It is worth mentioning that while doing initialization training for ICNN $f$ net,we are not training $f_0$ directly but training $F_0$. So the loss criteria in the initialization training may be two ways. Firstly, if we get the loss by comparing $F$ NN's derivative with the equation \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as below:
+It is worth mentioning that while doing initialization training for ICNN $f$ net,we are not training $f_0$ directly but training $F_0$. So the loss criteria in the initialization training may be two ways. Firstly, if we get the loss by comparing $F$ NN's derivative with the equation \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as Fig.4:
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=8cm]{images/f_ICNN_withoutInit.png}
+  \includegraphics[width=6cm]{images/f_ICNN_withoutInit.png}
   \caption{$f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly}
   \label{fig:train result}
 \end{figure}
 
-Secondly, if we treat the loss criteria as comparison between $F$ with the piecewise linear function $F_0$, the $f_0$ would becomes much better:
+Secondly, if we treat the loss criteria as comparison between $F$ with the piecewise linear function $F_0$, the $f_0$ would becomes much better as Fig.5 and Fig.6:
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=8cm]{images/ICNN_f_init.png}
-  \caption{$f_0$ from initialization process with criteria between $F_0$ and ideal integral function}
+  \includegraphics[width=6cm]{images/ICNN_f_init.png}
+  \caption{7-step-stair $f_0$, $f_0$ is from initialization process with criteria between $F_0$ and ideal integral function}
+  \label{fig:train result}
+\end{figure}
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=6cm]{images/segmented_f_init.png}
+  \caption{7-step-stair $f_0$, $f_0$ is from initialization process with criteria between $F_0$ and ideal integral function}
   \label{fig:train result}
 \end{figure}
 
@@ -270,7 +278,26 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
   \end{center}
   \end{table}
   
-  It can be seen that RAdam and Adam perform best and RAdam is more stable and faster than Adam. As a result, afterwards if there is no more specification, we always use RAdam as the optimizer. This is very foundamental result for the experiments afterwards.\\
+  It can be seen that RAdam and Adam perform best and RAdam is more stable and faster than Adam. Because while we use Adam, the $f$ may update from 5-step to 3-step but 5-step performs better than 3-step. This proves that Adam may lead $f$ deviate the (local) minima to a worse NN. The worse thing is that while we use Adam, we couldn't reproduce the same result. With the same initializations and NN structure setup, sometimes Adam leads $f$ to be 3-step finally but sometimes 4-step finally as below.
+  \begin{figure}
+    \centering
+        \begin{subfigure}[b]{0.2\textwidth}            
+                \includegraphics[width=\textwidth]{images/3-step-Adam.png}
+                \caption{3-step $f$}
+                \label{fig:3-step f}
+        \end{subfigure}%
+         %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.2\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{images/4-step-Adam.png}
+                \caption{4-step $f$}
+                \label{fig:4-step f}
+        \end{subfigure}
+        \caption{Different result caused by Adam instability}\label{fig:Different result caused by Adam instability}
+    \end{figure}
+  
+  As a result, afterwards if there is no more specification, we always use RAdam as the optimizer. This is very foundamental result for the experiments afterwards.\\
   3) \textbf{Segmented-7-stair-init}:
   In this part, we began trying not to use ICNN weights clamping and the optimizer is always RAdam. \\
 
@@ -280,7 +307,7 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
   \begin{tabular}{|c|l|c|l|l|l}
   \cline{1-5}
   \multicolumn{1}{|l|}{$f$ structure}                                                                & $g$ structure                                              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}ICNN \\ Clamping\end{tabular}} & $J^C$   & Remark                                                                                      &  \\ \cline{1-5}
-  \multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}6 layers\\ 300n/l\end{tabular}}                                                                        & \begin{tabular}[c]{@{}l@{}}3 layer\\ 100n/l\end{tabular} & Yes                                                                           & 0.2050 &                                                                                             &  \\ \cline{2-5}
+  \multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}7 layers\\ 300n/l\end{tabular}}                                                                        & \begin{tabular}[c]{@{}l@{}}3 layer\\ 100n/l\end{tabular} & Yes                                                                           & 0.2050 &                                                                                             &  \\ \cline{2-5}
                                                                                                    & \begin{tabular}[c]{@{}l@{}}3 layers\\ 100n/l\end{tabular} & No                                                                            & 0.1865 &                                                                                             &  \\ \cline{2-5}
                                                                                                    & \begin{tabular}[c]{@{}l@{}}3 layers\\ 300n/l\end{tabular} & No                                                                            & 0.1758 & \begin{tabular}[c]{@{}l@{}}fix $f$, then\\ update $g$:\\ $J^C\rightarrow$ 0.1754\end{tabular} &  \\ \cline{2-5}
                                                                                                    & \begin{tabular}[c]{@{}l@{}}6 layers\\ 300n/l\end{tabular} & No                                                                            & 0.1739 & \begin{tabular}[c]{@{}l@{}}fix $f$, then\\ update $g$:\\ $J^C\rightarrow$ 0.1746\end{tabular} &  \\ \cline{1-5}
@@ -292,6 +319,21 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
   
   In the Table 2, n/l means the number of units each layer. From which we could tell the $f$ structure matters a lot. If $f$ is not shaped well, sometimes continuing updating $f$ with $f$ fixed would only make the cost worse. 
   
+  The $f$ and $g$ shape of the best result: $J^C$=0.167 is shown below:
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[width=6cm]{images/fixedFfunction.png}
+    \caption{Fixed $f$ as a step function to obtain best result:0.167}
+    \label{fig:fixedFfunction}
+\end{figure}
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=6cm]{images/g_fixedFfunction.png}
+  \caption{$g$ solution while taking $f$ fixed as a step function}
+  \label{fig:g_fixedFfunction}
+\end{figure}
+  
   In the remark, we continue to update only one NN while fixing another NN which was saved from the lowest cost point. The final $f$ result for the last array is shown below:
 \begin{figure}[htp]
     \centering
@@ -300,12 +342,16 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
     \label{fig:Table2_last_column_continue_to_update_f}
 \end{figure}
 
-We could tell from the figure that the $f$ is stuck in 5-step-stair, which is local minima compared to better result got from 7-step-stair. In fact, this is also closely related to the $x_0$ distribution. Because $x_0$ has very little data which locates bigger than 15 or smaller than -15. So it's hard for optimizer to detect a good shape in the edge.
+We could tell from the figure that the $f$ is stuck in 5-step-stair, which is local minima compared to better result got from 7-step-stair. In fact, this is also closely related to the $x_0$ distribution. Because $x_0$ has very little data which locates bigger than 15 or smaller than -15. So it's hard for optimizer to detect a good shape in those areas.
 
 \subsection{ResNet structure}
-This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 300n/l, $g$ as 6 layers and 300n/l, $J^C\rightarrow$ 0.2153
-
-
+This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 300n/l, $g$ as 6 layers and 300n/l, $J^C\rightarrow$ 0.2153 as below:
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=6cm]{images/resnet_best_result.png}
+  \caption{Final $f$ solution of updating $f$ with $g$ fixed}
+  \label{fig:resnet_best_result}
+\end{figure}
 
 \section{$J^W$ Experiment Result}
 In this section, we don't have a well-organized initializations for $f$ as there is no previous paper reference. But the result is very closed to the linear controller. This proves that the Wasserstein distance formula still needs some great initializations to improve the solution, which could be saved for the future research.\\
@@ -315,7 +361,7 @@ The same as the $J^C$, the cost goes to 0.961\\
 If we first train $h$ with the hope that it could get a better initialization, then the cost still goes to 0.961.
 
 \section{Discussion}
-From the experiment result we could see the best result of this project comes when 
+From the experiment result we could see the best result of this project comes when $f$ is fixed as a segmented 7 step piecewise-constant  function. This is opposite to the property in the paper\cite{wu2011witsenhausen}, which asks the $f$ has to be smooth enough.
 
 \section*{Information for code}
 
