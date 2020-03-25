@@ -242,14 +242,16 @@ However, if choosing the optimal transport expression \eqref{eq:Jw2},
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
 
 \section{Experiment Result}
+If there is no more specification, the following results are corresponding to the classic cost expression \eqref{eq:minJ}. The detailed computation graph could be seen in 3.4 section.
 \subsection{ICNN structure}
 In this subsection, we present the results of setting $f$ NN as ICNN. \\
-1) No initialization:
+1) \textbf{No initialization}:
 The $f$ net could only go to two-step and total loss $J$ is around 0.36. So does $g$ net. This proves that the final NN rely on the initialization a lot. And the optimizer couldn't lead the $f$ net to very complex steps shape without initialization.\\
-2) 7-step-stair Initialization:
+2) \textbf{7-step-stair Initialization}:
 
+For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers. 
 \begin{table}[htbp]
-  \caption{$J(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure }
+  \caption{$J^{C}(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure }
   \begin{center}
   \begin{tabular}{|c|c|}
   \hline
@@ -258,16 +260,35 @@ The $f$ net could only go to two-step and total loss $J$ is around 0.36. So does
 
   Adadelta & 0.286\\
   RMSprop& 0.250 \\
-  % \hline
   RAdam & 0.220\\
   Adam & 0.216\\
   \hline
-  
+
 \end{tabular}
   \label{tab1e results}
   \end{center}
   \end{table}
-
+  
+  It can be seen that RAdam and Adam perform best and RAdam is more stable and faster than Adam. As a result, afterwards if there is no more specification, we always use RAdam as the optimizer. This is very foundamental result for the experiments afterwards.\\
+  3) \textbf{Segmented-7-stair-init}:
+  In this part, we began trying not to use ICNN weights clamping and the optimizer is always RAdam. 
+  \begin{table}[htbp]
+    \caption{$J^{C}(f,g)$ Comparison When $f$ is with segmented-7-stair-init and ICNN Structure}
+    \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    % \multicolumn
+    \textbf{Constraints}& $J^{C}$ \\
+    \hline
+  
+    With Clamping & 0.2050\\
+    No clamping& 0.1865 \\
+    \hline
+  
+  \end{tabular}
+    \label{tab1e results}
+    \end{center}
+    \end{table}
 
 \section*{Information for code}
 
