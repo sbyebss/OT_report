@@ -207,6 +207,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png
+INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png
+INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
