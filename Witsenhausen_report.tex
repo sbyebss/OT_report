@@ -242,7 +242,7 @@ However, if choosing the optimal transport expression \eqref{eq:Jw2},
 \subsection{Test Data Set}
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
 
-\section{Experiment Result}
+\section{$J^C$ Experiment Result}
 If there is no more specification, the following results are corresponding to the classic cost expression \eqref{eq:minJ}. The detailed computation graph could be seen in 3.4 section.
 \subsection{ICNN structure}
 In this subsection, we present the results of setting $f$ NN as ICNN. \\
@@ -296,6 +296,13 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
 This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 300n/l, $g$ as 6 layers and 300n/l, $J^C\rightarrow$ 0.2153
 
 
+
+\section{$J^W$ Experiment Result}
+1) \textbf{No initialization}:
+The same as the $J^C$, the cost goes to 0.961
+1) \textbf{Train $h$ firstly}:
+If we first train $h$ with the hope that it could get a better initialization, then the cost still goes to 0.961.
+
 \section*{Information for code}
 
 Different train process are edited in train\underline{ }\textit{specificName}.py file. 
@@ -309,6 +316,8 @@ The \textit{data} folder saves the main body training data as well as initializa
 The \textit{test} folder saves some test files which verified some important rudimentary ideas.
 
 The \textit{modle} folder saves the different NN parameters for initialization or some trained solution NNs.
+
+
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
