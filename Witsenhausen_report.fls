@@ -138,9 +138,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -160,8 +157,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
+INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
+INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png
@@ -186,6 +188,18 @@ INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withou
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
 INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl

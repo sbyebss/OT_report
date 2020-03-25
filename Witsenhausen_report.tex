@@ -108,12 +108,22 @@ has nonlinear control laws that outperform all linear laws.
 As a result, $f(x_0)=x_1$ and $g(x_1+z)=u_2$. Out goal is to minimize the quadratic cost:$k^{2} \E [U_1^{2}]+\E[X_2^{2}]$, which can also be written as 
 \begin{equation}\label{eq:minJ}
 \begin{aligned}
-\mathrm{min}J(f,g):=&k^{2}\E[f(X_0)-X_0]^{2}+\\
+\mathrm{min}J^{C}(f,g):=&k^{2}\E[f(X_0)-X_0]^{2}+\\
 &\E[(f(X_0)-g(f(X_0)+N))^{2}]
 \end{aligned}
 \end{equation}
 
 In equation \eqref{eq:minJ}, there is a parameter $k^2$, which in fact determines the cost gap between the linear controller and nonlinear controller\cite{baglietto2001numerical}. If $k^2$ is smaller, the gap is bigger. For better comparison with the results got by previous researchers, $k^2$ is set as 0.04 in this report.
+
+However, there is not only one way to represent costs.\cite{wu2011witsenhausen} We can view Witsenhausen problem from the optimal transport theory. In this way, we could rewrite the cost in another equivalent way:
+\begin{equation}\label{eq:minJw}
+  \begin{aligned}
+  \mathrm{min}J^{W}(f,g):=&k^{2}W_2(P,Q)^{2}+mmse(Q,\sigma^2)
+  % &\E[(f(X_0)-g(f(X_0)+N))^{2}]
+\end{aligned}
+\end{equation}
+
+where $W_2$ means Wasserstein-2 distance. Compared to the equation \eqref{minJw}, equation \eqref{eq:minJ} could be called as classic Witsenhausen cost.
 
 In addition, it is already known that $f(x)$ must have some strict property to be optimal \cite{wu2011witsenhausen} :
 \begin{adjustwidth}{0.5cm}{}
@@ -212,6 +222,9 @@ Secondly, if we treat the loss criteria as comparison between $F$ with the piece
   \label{fig:train result}
 \end{figure}
 
+\subsection{$J(f,g) calculation$}
+From the classic view of Witsenhausen problem, 
+
 \subsection{Test Data Set}
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
 
@@ -227,7 +240,7 @@ The $f$ net could only go to two-step and total loss $J$ is around 0.36. So does
   \begin{center}
   \begin{tabular}{|c|c|c|c|}
   \hline
-  \textbf{Table}&\multicolumn{3}{|c|}{\textbf{Optimizer}} \\
+  \textbf{Optimizer}&\multicolumn{3}{|c|}{\textbf{J}} \\
   \cline{2-4} 
   \textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
   \hline

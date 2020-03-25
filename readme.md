@@ -12,3 +12,5 @@ If I use the ICNN's derivative to calculate the loss, the f could only be two-st
 analyze why f is more important than g for loss decreasing.
 
 How to add page for the report??
+
+add another way to represent Witsenhausen loss.
