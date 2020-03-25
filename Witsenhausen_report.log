@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 22:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  24 MAR 2020 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -224,7 +224,14 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count111
 \@lastruleclass=\count112
 \@thisrulewidth=\dimen156
-) (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
+) (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
+
+LaTeX Warning: Label `fig:definition' multiply defined.
+
+
+LaTeX Warning: Label `fig:train result' multiply defined.
+
+)
 \openout1 = `Witsenhausen_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -301,22 +308,6 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
-
-
-LaTeX Warning: Citation `witsenhausen1968counterexample' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Citation `lee2001witsenhausen' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Citation `baglietto2001numerical' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Citation `amos2017input' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Citation `witsenhausen1968counterexample' on page 1 undefined on input line 96.
-
 <images/Wits_definition.png, id=1, 425.59pt x 180.675pt>
 File: images/Wits_definition.png Graphic file (type png)
 <use images/Wits_definition.png>
@@ -324,185 +315,66 @@ Package pdftex.def Info: images/Wits_definition.png  used on input line 99.
 (pdftex.def)             Requested size: 170.71652pt x 72.47548pt.
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 104.
 LaTeX Font Info:    Try loading font information for U+msa on input line 104.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 104.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Reference `eq:minJ' on page 1 undefined on input line 116.
-
-
-LaTeX Warning: Citation `baglietto2001numerical' on page 1 undefined on input line 116.
-
-
-LaTeX Warning: Citation `wu2011witsenhausen' on page 1 undefined on input line 118.
-
-/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex:127: Missing $ inserted.
-<inserted text> 
-                $
-l.127 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex:127: Display math should end with $$.
-<to be read again> 
-                   \par 
-l.127 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex:128: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 \end{equation}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex:128: You can't use `\eqno' in vertical mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.128 \end{equation}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex:128: Missing $ inserted.
-<inserted text> 
-                $
-l.128 \end{equation}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex:128: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.128 \end{equation}
-                    
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-LaTeX Warning: Reference `eq:Jw' on page 1 undefined on input line 130.
-
-
-LaTeX Warning: Reference `eq:minJ' on page 1 undefined on input line 130.
-
-
-LaTeX Warning: Citation `wu2011witsenhausen' on page 1 undefined on input line 132.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 134.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 139.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.03749> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
-[][][]\OT1/ptm/m/n/8.03 The code of this project could be found at:
- []
-
-
-LaTeX Warning: Citation `barron2017continuously' on page 1 undefined on input line 147.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png>]
-<images/ICNN.png, id=19, 413.545pt x 157.58875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+[][][]\OT1/ptm/m/n/8.03 The code of this project could be found at:
+ []
+
+<images/ICNN.png, id=23, 413.545pt x 157.58875pt>
 File: images/ICNN.png Graphic file (type png)
 <use images/ICNN.png>
-Package pdftex.def Info: images/ICNN.png  used on input line 156.
+Package pdftex.def Info: images/ICNN.png  used on input line 161.
 (pdftex.def)             Requested size: 227.62204pt x 86.7414pt.
 
-
-LaTeX Warning: Citation `amos2017input' on page 2 undefined on input line 161.
-
-
-LaTeX Warning: Citation `he2016deep' on page 2 undefined on input line 163.
-
-
-LaTeX Warning: Citation `luo2019adaptive' on page 2 undefined on input line 168.
-
-
-LaTeX Warning: Citation `liu2019variance' on page 2 undefined on input line 168.
-
-
-LaTeX Warning: Citation `zaheer2018adaptive' on page 2 undefined on input line 168.
-
-
-Underfull \hbox (badness 7415) in paragraph at lines 168--168
+Underfull \hbox (badness 7415) in paragraph at lines 173--173
 [][][]\OT1/ptm/m/n/8.03 The py-torch op-ti-mizer source code could be found here:
  []
 
-
-LaTeX Warning: Citation `liu2019variance' on page 2 undefined on input line 172.
-
-
-LaTeX Warning: Citation `lee2001witsenhausen' on page 2 undefined on input line 182.
-
-
-LaTeX Warning: Reference `7-stairs' on page 2 undefined on input line 203.
-
-
-LaTeX Warning: Reference `segmented-7-stairs' on page 2 undefined on input line 203.
-
-
-LaTeX Warning: Reference `7-stairs' on page 2 undefined on input line 205.
-
-<images/piecewise_linear.png, id=20, 395.4775pt x 256.96pt>
+<images/piecewise_linear.png, id=24, 395.4775pt x 256.96pt>
 File: images/piecewise_linear.png Graphic file (type png)
 <use images/piecewise_linear.png>
-Package pdftex.def Info: images/piecewise_linear.png  used on input line 208.
+Package pdftex.def Info: images/piecewise_linear.png  used on input line 213.
 (pdftex.def)             Requested size: 227.62204pt x 147.89592pt.
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 209.
-
-LaTeX Warning: Reference `7-stairs' on page 2 undefined on input line 209.
-
-
-LaTeX Warning: Reference `7-stairs' on page 2 undefined on input line 213.
-
-
-LaTeX Warning: Reference `segmented-7-stairs' on page 2 undefined on input line 213.
-
-<images/f_ICNN_withoutInit.png, id=21, 848.16875pt x 635.37375pt>
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 214.
+<images/f_ICNN_withoutInit.png, id=25, 848.16875pt x 635.37375pt>
 File: images/f_ICNN_withoutInit.png Graphic file (type png)
 <use images/f_ICNN_withoutInit.png>
-Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 216.
+Package pdftex.def Info: images/f_ICNN_withoutInit.png  used on input line 221.
 (pdftex.def)             Requested size: 227.62204pt x 170.51584pt.
-<images/ICNN_f_init.png, id=22, 448.67625pt x 323.2075pt>
+[2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png>]
+<images/ICNN_f_init.png, id=31, 448.67625pt x 323.2075pt>
 File: images/ICNN_f_init.png Graphic file (type png)
 <use images/ICNN_f_init.png>
-Package pdftex.def Info: images/ICNN_f_init.png  used on input line 224.
+Package pdftex.def Info: images/ICNN_f_init.png  used on input line 229.
 (pdftex.def)             Requested size: 227.62204pt x 163.96565pt.
-[2 </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png>]
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 229.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 234.
 
-Underfull \vbox (badness 2680) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 []\OT1/ptm/m/n/10.03749 Different train pro-cess are edited in
  []
 
-[3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png>]
-No file Witsenhausen_report.bbl.
+[3 </home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png>] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
+Underfull \hbox (badness 2351) in paragraph at lines 61--63
+[]\OT1/ptm/m/n/8.03 L. Luo, Y. Xiong, Y. Liu, and X. Sun, ``Adap-tive gra-di-ent
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -518,25 +390,22 @@ Before submitting the final camera ready copy, remember to:
 
 ] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3530 strings out of 494923
- 54019 string characters out of 6180742
- 115704 words of memory out of 5000000
- 6772 multiletter control sequences out of 15000+600000
- 51357 words of font info for 109 fonts, out of 8000000 for 9000
+ 3541 strings out of 494923
+ 54313 string characters out of 6180742
+ 115846 words of memory out of 5000000
+ 6781 multiletter control sequences out of 15000+600000
+ 51386 words of font info for 109 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 41i,8n,26p,815b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (4 pages, 285218 bytes).
+ 41i,11n,26p,814b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (4 pages, 312323 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -116,18 +116,23 @@ As a result, $f(x_0)=x_1$ and $g(x_1+z)=u_2$. Out goal is to minimize the quadra
 In equation \eqref{eq:minJ}, there is a parameter $k^2$, which in fact determines the cost gap between the linear controller and nonlinear controller\cite{baglietto2001numerical}. If $k^2$ is smaller, the gap is bigger. For better comparison with the results got by previous researchers, $k^2$ is set as 0.04 in this report.
 
 However, there is not only one way to represent costs.\cite{wu2011witsenhausen} We can view Witsenhausen problem from the optimal transport theory. In this way, we could rewrite the cost in another equivalent way:
-\begin{equation}\label{eq:Jw}
-  \min_{Q}J^{W}(f,g):=k^{2}W_2(P,Q)^{2}+mmse(Q,\sigma^2)
-  \end{equation}
-
+{
+% \setstretch{2.0}
+\begin{equation}\label{eq:Jw1}
+  \begin{aligned}
+&\min_{Q}J^{W}(f,g)\\
+:=&k^{2}W_2(P,Q)^{2}+mmse(Q,\sigma^2)\\
+:=&k^{2}W_2(P,Q)^{2}+\min_{g}\underset{ \underset{N \sim \mathcal{N}(0,1)}{X_1\sim Q} }{\mathbb{E}}[(g(X_1+N)-X_1)^2]
+  \end{aligned}
+\end{equation}
+}
 which is the same with
-\begin{equation}
-\min_{Q,g}=k^{2}W_2(P,Q)^{2}+mmse(Q,\sigma^2)
-  % &\E[(f(X_0)-g(f(X_0)+N))^{2}]
 
+\begin{equation}\label{eq:Jw2}
+\min_{Q,g}=k^{2}W_2(P,Q)^{2}+\underset{ \underset{N \sim \mathcal{N}(0,1)}{X_1\sim Q} }{\mathbb{E}}[(g(X_1+N)-X_1)^2]
 \end{equation}
 
-where $W_2$ means Wasserstein-2 distance. Compared to the equation \eqref{eq:Jw}, equation \eqref{eq:minJ} could be called as classic Witsenhausen cost.
+where $W_2$ means Wasserstein-2 distance. Compared to the equation \eqref{eq:Jw1}, equation \eqref{eq:minJ} could be called as classic Witsenhausen cost.
 
 In addition, it is already known that $f(x)$ must have some strict property to be optimal \cite{wu2011witsenhausen} :
 \begin{adjustwidth}{0.5cm}{}
