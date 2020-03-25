@@ -231,8 +231,12 @@ Secondly, if we treat the loss criteria as comparison between $F$ with the piece
   \label{fig:train result}
 \end{figure}
 
-\subsection{$J(f,g) calculation$}
-From the classic view of Witsenhausen problem, 
+% \subsection{$J(f,g)$ calculation}
+\subsection{Computational Graph}
+From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as below:
+
+
+However, if choosing the optimal transport expression \eqref{eq:Jw2}, 
 
 \subsection{Test Data Set}
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
@@ -247,14 +251,16 @@ The $f$ net could only go to two-step and total loss $J$ is around 0.36. So does
 \begin{table}[htbp]
   \caption{$J(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure }
   \begin{center}
-  \begin{tabular}{|c|c|c|c|}
+  \begin{tabular}{|c|c|}
   \hline
-  \textbf{Optimizer}&\multicolumn{3}{|c|}{\textbf{J}} \\
-  \cline{2-4} 
-  \textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+  \textbf{Optimizer}& $J^{C}$ \\
   \hline
-  copy& More table copy& &  \\
 
+  Adadelta & 0.286\\
+  RMSprop& 0.250 \\
+  % \hline
+  RAdam & 0.220\\
+  Adam & 0.216\\
   \hline
   
 \end{tabular}
