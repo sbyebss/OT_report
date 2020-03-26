@@ -59,10 +59,21 @@
 \draw[->](integralx1)--(x1);
 \draw[->](x1)--(sum);
 \draw[->](N)--(sum);
-\draw[->](sum)--(Gin)
-\draw[->](Gin)--(gNN)
-\draw[->]
-\draw[->]
+\draw[->](sum)--(Gin);
+\draw[->](Gin)--(gNN);
+\draw[->](gNN)--(xhat);
+\draw[->](xhat)--(MSE2);
+\draw[->](x1)--(MSE2);
+\draw[->](MSE2)--(gloss);
+\draw[->](gloss)--(sumloss);
+\draw[->](sumloss)--(totalloss);
+\draw[->](x0)--(MSE1);
+\draw[->](x1)--(MSE1);
+\draw[->](MSE1)--(floss);
+\draw[->](floss)--(sumloss);
+\draw[->](sumloss)--(totalloss);
+\draw[->](x0)--(MSE1);
+
 
 %   \draw[->] (x0)--(fNN)--(integralx1)--(x1)--(sum);
 %   \draw[->] (N)--(sum)--(Gin)--(gNN)--(xhat)--(MSE2);

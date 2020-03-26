@@ -1,12 +1,12 @@
-PWD /home/fjj/Study_hard/Optimal Transport/project/Report
+PWD /home/jfan97/Study_hard/Optimal_Transport/OT_report
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.tex
-OUTPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.log
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/IEEEtran.cls
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/IEEEtran.cls
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.tex
+OUTPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.log
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/IEEEtran.cls
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/IEEEtran.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
@@ -93,9 +93,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
-OUTPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.aux
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.aux
+OUTPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -126,10 +126,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png
-OUTPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Wits_definition.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/Wits_definition.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/Wits_definition.png
+OUTPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.pdf
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/Wits_definition.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -161,27 +161,27 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/piecewise_linear.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/ICNN.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/ICNN.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/ICNN.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/piecewise_linear.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/piecewise_linear.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/piecewise_linear.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_ICNN_withoutInit.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/ICNN_f_init.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/segmented_f_init.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/segmented_f_init.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/segmented_f_init.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/f_ICNN_withoutInit.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/f_ICNN_withoutInit.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/f_ICNN_withoutInit.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/ICNN_f_init.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/ICNN_f_init.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/ICNN_f_init.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/segmented_f_init.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/segmented_f_init.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/segmented_f_init.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -209,9 +209,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/3-step-Adam.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/3-step-Adam.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/3-step-Adam.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/3-step-Adam.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/3-step-Adam.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/3-step-Adam.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
@@ -224,38 +224,38 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/4-step-Adam.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/4-step-Adam.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/4-step-Adam.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_update_2_best.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_update_2_best.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/f_update_2_best.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/g_update_2_best.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/g_update_2_best.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/g_update_2_best.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/4-step-Adam.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/4-step-Adam.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/4-step-Adam.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/f_update_2_best.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/f_update_2_best.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/f_update_2_best.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/g_update_2_best.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/g_update_2_best.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/g_update_2_best.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/fixedFfunction.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/fixedFfunction.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/fixedFfunction.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/g_fixedFfunction.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/g_fixedFfunction.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/g_fixedFfunction.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/Table2_last_column_continue_to_update_f.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/resnet_best_result.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/resnet_best_result.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/images/resnet_best_result.png
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/fixedFfunction.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/fixedFfunction.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/fixedFfunction.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/g_fixedFfunction.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/g_fixedFfunction.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/g_fixedFfunction.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/Table2_last_column_continue_to_update_f.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/Table2_last_column_continue_to_update_f.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/Table2_last_column_continue_to_update_f.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/resnet_best_result.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/resnet_best_result.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/images/resnet_best_result.png
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.bbl
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.aux
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/Witsenhausen_report.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
