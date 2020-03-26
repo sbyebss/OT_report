@@ -255,7 +255,13 @@ From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is direct
   \label{fig:classic comp graph}
 \end{figure}
 
-However, if choosing the optimal transport expression \eqref{eq:Jw2}, !!!2
+However, if choosing the optimal transport expression \eqref{eq:Jw2}, the computational graph is as Fig.\ref{fig:Wasserstein comp graph}
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{computational_graph/J_W.png}
+  \caption{Computational graph of the $J_W$ problem}
+  \label{fig:Wasserstein comp graph}
+\end{figure}
 
 \subsection{Test Data Set}
 In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
