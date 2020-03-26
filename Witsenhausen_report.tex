@@ -247,8 +247,13 @@ Secondly, if we treat the loss criteria as comparison between $F$ with the piece
 
 % \subsection{$J(f,g)$ calculation}
 \subsection{Computational Graph}
-From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as below:
-!!!1
+From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as Fig.\ref{fig:classic comp graph}:
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=8cm]{computational_graph/J_C.png}
+  \caption{Computational graph of the $J_C$ problem}
+  \label{fig:classic comp graph}
+\end{figure}
 
 However, if choosing the optimal transport expression \eqref{eq:Jw2}, !!!2
 
