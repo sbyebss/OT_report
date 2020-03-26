@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  26 MAR 2020 03:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.7)  26 MAR 2020 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.tex"
-(/home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.tex
+**/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.tex
+(/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2015/07/15 v1.2 Class to compile TeX sub-files standalone
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -376,7 +376,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@subfigure=\count130
 \c@subtable=\count131
-) (/home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.aux)
+) (/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.aux)
 \openout1 = `comp_g.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -423,4 +423,4 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this pack
+(etexcmds)             In the latter case, load this package earli

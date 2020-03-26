@@ -1,10 +1,10 @@
-PWD /home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph
+PWD /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.tex
-OUTPUT /home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.log
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.tex
+OUTPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -159,9 +159,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.aux
-INPUT /home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.aux
-OUTPUT /home/fjj/Study_hard/Optimal Transport/project/Report/computational_graph/comp_g.aux
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.aux
+INPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.aux
+OUTPUT /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
