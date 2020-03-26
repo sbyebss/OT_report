@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.7)  26 MAR 2020 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  26 MAR 2020 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.tex
-(/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.tex
+**"/home/fjj/Study_hard/Optimal Transport/project/OT_report/computational_graph/com_g_W.tex"
+(/home/fjj/Study_hard/Optimal Transport/project/OT_report/computational_graph/com_g_W.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2015/07/15 v1.2 Class to compile TeX sub-files standalone
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -376,8 +376,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@subfigure=\count130
 \c@subtable=\count131
-) (/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.aux)
-\openout1 = `comp_g.aux'.
+) (/home/fjj/Study_hard/Optimal Transport/project/OT_report/computational_graph/com_g_W.aux)
+\openout1 = `com_g_W.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -449,20 +449,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/fjj/Study_hard/Optimal Transport/project/OT_report/computational_graph/com_g_W.aux) ) 
 Here is how much of TeX's memory you used:
- 14109 strings out of 494847
- 275600 string characters out of 6179081
- 307437 words of memory out of 5000000
- 17165 multiletter control sequences out of 15000+600000
+ 14104 strings out of 494923
+ 275557 string characters out of 6180742
+ 307192 words of memory out of 5000000
+ 17151 multiletter control sequences out of 15000+600000
  5339 words of font info for 22 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
- 62i,7n,94p,484b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/jfan97/Study_hard/Optimal_Transport/OT_report/computational_graph/comp_g.pdf (1 page, 62426 bytes).
+ 14 hyphenation exceptions out of 8191
+ 62i,7n,94p,492b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/OT_report/computational_graph/com_g_W.pdf" (1 page, 47241 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
