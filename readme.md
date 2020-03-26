@@ -1,5 +1,7 @@
 ## For optimal transport course report
 
+There are some notes for writing the reports:
+
 -why do we take experimens mainly on k^2=0.04?
 
 -add the ICNN structure png and resnet png
