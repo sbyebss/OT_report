@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  25 MAR 2020 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.21)  25 MAR 2020 20:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,6 +267,9 @@ LaTeX Warning: Label `fig:train result' multiply defined.
 
 LaTeX Warning: Label `fig:train result' multiply defined.
 
+
+LaTeX Warning: Label `fig:Different result caused by Adam instability' multiply defined.
+
 )
 \openout1 = `Witsenhausen_report.aux'.
 
@@ -428,32 +431,42 @@ Overfull \hbox (19.82817pt too wide) in paragraph at lines 307--317
  [] 
  []
 
-<images/fixedFfunction.png, id=45, 538.01pt x 362.35374pt>
+<images/f_update_2_best.png, id=45, 286.06876pt x 216.30812pt>
+File: images/f_update_2_best.png Graphic file (type png)
+<use images/f_update_2_best.png>
+Package pdftex.def Info: images/f_update_2_best.png  used on input line 324.
+(pdftex.def)             Requested size: 101.17645pt x 76.50441pt.
+<images/g_update_2_best.png, id=46, 291.58937pt x 201.25188pt>
+File: images/g_update_2_best.png Graphic file (type png)
+<use images/g_update_2_best.png>
+Package pdftex.def Info: images/g_update_2_best.png  used on input line 332.
+(pdftex.def)             Requested size: 101.17645pt x 69.83118pt.
+<images/fixedFfunction.png, id=47, 538.01pt x 362.35374pt>
 File: images/fixedFfunction.png Graphic file (type png)
 <use images/fixedFfunction.png>
-Package pdftex.def Info: images/fixedFfunction.png  used on input line 325.
-(pdftex.def)             Requested size: 170.71652pt x 114.97691pt.
-<images/g_fixedFfunction.png, id=46, 274.02374pt x 183.68625pt>
+Package pdftex.def Info: images/fixedFfunction.png  used on input line 344.
+(pdftex.def)             Requested size: 101.17645pt x 68.1402pt.
+<images/g_fixedFfunction.png, id=48, 274.02374pt x 183.68625pt>
 File: images/g_fixedFfunction.png Graphic file (type png)
 <use images/g_fixedFfunction.png>
-Package pdftex.def Info: images/g_fixedFfunction.png  used on input line 332.
-(pdftex.def)             Requested size: 170.71652pt x 114.43924pt.
-<images/Table2_last_column_continue_to_update_f.png, id=47, 509.905pt x 367.3725pt>
+Package pdftex.def Info: images/g_fixedFfunction.png  used on input line 352.
+(pdftex.def)             Requested size: 101.17645pt x 67.8227pt.
+<images/Table2_last_column_continue_to_update_f.png, id=49, 509.905pt x 367.3725pt>
 File: images/Table2_last_column_continue_to_update_f.png Graphic file (type png)
 <use images/Table2_last_column_continue_to_update_f.png>
-Package pdftex.def Info: images/Table2_last_column_continue_to_update_f.png  used on input line 340.
+Package pdftex.def Info: images/Table2_last_column_continue_to_update_f.png  used on input line 362.
 (pdftex.def)             Requested size: 170.71652pt x 122.99907pt.
-<images/resnet_best_result.png, id=48, 520.94624pt x 690.58pt>
+<images/resnet_best_result.png, id=50, 520.94624pt x 690.58pt>
 File: images/resnet_best_result.png Graphic file (type png)
 <use images/resnet_best_result.png>
-Package pdftex.def Info: images/resnet_best_result.png  used on input line 351.
+Package pdftex.def Info: images/resnet_best_result.png  used on input line 373.
 (pdftex.def)             Requested size: 170.71652pt x 226.30095pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
 []\OT1/ptm/m/n/10.03749 Different train pro-cess are edited in
  []
 
-[4 </home/fjj/Study_hard/Optimal Transport/project/Report/images/3-step-Adam.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/4-step-Adam.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/fixedFfunction.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/g_fixedFfunction.png>] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
+[4 </home/fjj/Study_hard/Optimal Transport/project/Report/images/3-step-Adam.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/4-step-Adam.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/f_update_2_best.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/g_update_2_best.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/fixedFfunction.png> </home/fjj/Study_hard/Optimal Transport/project/Report/images/g_fixedFfunction.png>] (/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.bbl
 Underfull \hbox (badness 2351) in paragraph at lines 61--63
 []\OT1/ptm/m/n/8.03 L. Luo, Y. Xiong, Y. Liu, and X. Sun, ``Adap-tive gra-di-ent
  []
@@ -476,18 +489,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4784 strings out of 494923
- 77067 string characters out of 6180742
- 142577 words of memory out of 5000000
- 7999 multiletter control sequences out of 15000+600000
+ 4797 strings out of 494923
+ 77421 string characters out of 6180742
+ 143603 words of memory out of 5000000
+ 8010 multiletter control sequences out of 15000+600000
  53574 words of font info for 120 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  42i,15n,40p,814b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (5 pages, 439811 bytes).
+Output written on "/home/fjj/Study_hard/Optimal Transport/project/Report/Witsenhausen_report.pdf" (5 pages, 475874 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

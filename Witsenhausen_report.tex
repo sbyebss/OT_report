@@ -317,22 +317,44 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
   \end{center}
   \end{table}
   
-  In the Table 2, n/l means the number of units each layer. From which we could tell the $f$ structure matters a lot. If $f$ is not shaped well, sometimes continuing updating $f$ with $f$ fixed would only make the cost worse. 
-  
-  The $f$ and $g$ shape of the best result: $J^C$=0.167 is shown below:
-  \begin{figure}[htp]
+  In the Table 2, n/l means the number of units each layer. From which we could tell the $f$ structure matters a lot. If $f$ is not shaped well, sometimes continuing updating $f$ with $f$ fixed would only make the cost worse. \\
+  \begin{figure}
     \centering
-    \includegraphics[width=6cm]{images/fixedFfunction.png}
-    \caption{Fixed $f$ as a step function to obtain best result:0.167}
-    \label{fig:fixedFfunction}
-\end{figure}
+        \begin{subfigure}[b]{0.2\textwidth}            
+                \includegraphics[width=\textwidth]{images/f_update_2_best.png}
+                \caption{$f$}
+                \label{fig:f_update_2_best}
+        \end{subfigure}%
+         %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.2\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{images/g_update_2_best.png}
+                \caption{$g$}
+                \label{fig:g_update_2_best}
+        \end{subfigure}
+        \caption{$J^C=0.1739$ corresponding solutions}\label{fig:Different result caused by Adam instability}
+    \end{figure}
+  
+    The $f$ and $g$ shape of the best result: $J^C$=0.167 is shown below:
 
-\begin{figure}[htp]
-  \centering
-  \includegraphics[width=6cm]{images/g_fixedFfunction.png}
-  \caption{$g$ solution while taking $f$ fixed as a step function}
-  \label{fig:g_fixedFfunction}
-\end{figure}
+    \begin{figure}
+      \centering
+          \begin{subfigure}[b]{0.2\textwidth}            
+                  \includegraphics[width=\textwidth]{images/fixedFfunction.png}
+                  \caption{$f$}
+                  % \label{fig:f_update_2_best}
+          \end{subfigure}%
+           %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+            %(or a blank line to force the subfigure onto a new line)
+          \begin{subfigure}[b]{0.2\textwidth}
+                  \centering
+                  \includegraphics[width=\textwidth]{images/g_fixedFfunction.png}
+                  \caption{$g$}
+                  % \label{fig:g_update_2_best}
+          \end{subfigure}
+          \caption{Fix $f$ as a stair function corresponding solutions}\label{fig:fixedFfunction}
+      \end{figure}
   
   In the remark, we continue to update only one NN while fixing another NN which was saved from the lowest cost point. The final $f$ result for the last array is shown below:
 \begin{figure}[htp]
@@ -349,7 +371,7 @@ This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 
 \begin{figure}[htp]
   \centering
   \includegraphics[width=6cm]{images/resnet_best_result.png}
-  \caption{Final $f$ solution of updating $f$ with $g$ fixed}
+  \caption{ResNet result}
   \label{fig:resnet_best_result}
 \end{figure}
 
