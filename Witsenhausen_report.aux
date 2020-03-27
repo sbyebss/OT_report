@@ -13,9 +13,9 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:definition}{{1}{1}}
 \newlabel{eq:minJ}{{2}{1}}
-\newlabel{eq:Jw1}{{3}{1}}
-\newlabel{eq:Jw2}{{4}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Basic Neural Network Setup}{1}}
+\newlabel{eq:minJ_more}{{4}{1}}
+\newlabel{eq:minJ_w1}{{5}{1}}
+\newlabel{eq:Jw2}{{7}{1}}
 \citation{barron2017continuously}
 \citation{amos2017input}
 \citation{he2016deep}
@@ -24,46 +24,54 @@
 \citation{zaheer2018adaptive}
 \citation{liu2019variance}
 \citation{lee2001witsenhausen}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Basic Neural Network Setup}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Neural Network Architecture}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces fully ICNN structure\relax }}{2}}
 \newlabel{fig:definition}{{2}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Optimizer}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Initialization}{2}}
-\newlabel{7-stairs}{{6}{2}}
-\newlabel{segmented-7-stairs}{{7}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The corresponding $F_0$ when $f_0$ is taken as Equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces 6\hbox {}\unskip \@@italiccorr )}}\relax }}{3}}
+\newlabel{7-stairs}{{9}{2}}
+\newlabel{segmented-7-stairs}{{10}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The corresponding $F_0$ when $f_0$ is taken as Equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces 9\hbox {}\unskip \@@italiccorr )}}\relax }}{3}}
 \newlabel{fig:The corresponding $F_0$ when $f_0$ is taken as Equation}{{3}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Computational Graph}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces $f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly\relax }}{3}}
 \newlabel{fig:$f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly}{{4}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Computational Graph}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces $f_0$ is from initialization process with criteria between $F_0$ and ideal integral function\relax }}{3}}
 \newlabel{fig:f_0 from initialization process with criteria between $F_0$ and ideal integral function}{{5}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Computational graph of the $J_C$ problem\relax }}{3}}
 \newlabel{fig:classic comp graph}{{6}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Computational graph of the $J_W$ problem\relax }}{3}}
-\newlabel{fig:Wasserstein comp graph}{{7}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Test Data Set}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Computational graph of the $J_W$ problem\relax }}{4}}
+\newlabel{fig:Wasserstein comp graph}{{7}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Test Data Set}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}$J^C$ Experiment Result}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}ICNN structure}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces $J^{C}(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure \relax }}{4}}
+\newlabel{tab1e results}{{1}{4}}
 \newlabel{fig:3-step f}{{8a}{4}}
 \newlabel{sub@fig:3-step f}{{a}{4}}
 \newlabel{fig:4-step f}{{8b}{4}}
 \newlabel{sub@fig:4-step f}{{b}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Different $f$ result caused by Adam instability\relax }}{4}}
 \newlabel{fig:Different $f$ result caused by Adam instability}{{8}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}$J^C$ Experiment Result}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}ICNN structure}{4}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces $J^{C}(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure \relax }}{4}}
-\newlabel{tab1e results}{{1}{4}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces $J^{C}(f,g)$ Comparison When $f$ is with segmented-7-stair-init and ICNN Structure\relax }}{4}}
 \newlabel{table:segmented-7-stair-init table results}{{2}{4}}
-\newlabel{fig:f_update_2_best}{{9a}{4}}
-\newlabel{sub@fig:f_update_2_best}{{a}{4}}
-\newlabel{fig:g_update_2_best}{{9b}{4}}
-\newlabel{sub@fig:g_update_2_best}{{b}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces $J^C=0.1739$ corresponding solutions\relax }}{4}}
-\newlabel{fig:$J^C=0.1739$ corresponding solutions}{{9}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Fix $f$ as a stair function corresponding solutions\relax }}{4}}
-\newlabel{fig:fixedFfunction}{{10}{4}}
 \citation{wu2011witsenhausen}
+\newlabel{fig:f_update_2_best}{{9a}{5}}
+\newlabel{sub@fig:f_update_2_best}{{a}{5}}
+\newlabel{fig:g_update_2_best}{{9b}{5}}
+\newlabel{sub@fig:g_update_2_best}{{b}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces $J^C=0.1739$ corresponding solutions\relax }}{5}}
+\newlabel{fig:$J^C=0.1739$ corresponding solutions}{{9}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Fix $f$ as a stair function corresponding solutions\relax }}{5}}
+\newlabel{fig:fixedFfunction}{{10}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Final $f$ solution of updating $f$ with $g$ fixed\relax }}{5}}
+\newlabel{fig:Table2_last_column_continue_to_update_f}{{11}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}ResNet structure}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}$J^W$ Experiment Result}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces ResNet result\relax }}{5}}
+\newlabel{fig:resnet_best_result}{{12}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{5}}
 \bibstyle{IEEEtran}
 \bibdata{annot_report}
 \bibcite{witsenhausen1968counterexample}{1}
@@ -75,12 +83,5 @@
 \bibcite{he2016deep}{7}
 \bibcite{luo2019adaptive}{8}
 \bibcite{liu2019variance}{9}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Final $f$ solution of updating $f$ with $g$ fixed\relax }}{5}}
-\newlabel{fig:Table2_last_column_continue_to_update_f}{{11}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}ResNet structure}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces ResNet result\relax }}{5}}
-\newlabel{fig:resnet_best_result}{{12}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}$J^W$ Experiment Result}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{5}}
-\@writefile{toc}{\contentsline {section}{References}{5}}
 \bibcite{zaheer2018adaptive}{10}
+\@writefile{toc}{\contentsline {section}{References}{6}}

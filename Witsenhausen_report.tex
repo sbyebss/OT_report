@@ -25,55 +25,63 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
- In this report, several neural networks with different structures are implemented to solve Witsenhausen problem. Other improving strategies include optimizers, initializations and forced function fixing. Finally, the result are compared with former people and a better result is obtained. Also, the shortcoming of the neural network also shows in this project. The neural network may be stuck into a near local minima.
+ In this report, several neural networks with different structures are implemented to solve the Witsenhausen problem. Other improving strategies include optimizers, initializations and forced function fixing. Finally, the result are compared with previous studies and a better result is obtained. Also, the shortcoming of the neural network also shows in this project. The neural network may be stuck in a near local minima.
 \end{abstract}
 
 
 \section{Introduction}
-  In this report, we proposed several solutions to the well-known and still unsolved Witsenhausen counterexample. \cite{witsenhausen1968counterexample} There have been some meaningful tries to detect the global minima of the min problem, such as Lee \cite{lee2001witsenhausen}and M. Barglietto \cite{baglietto2001numerical} Some of their manipulations are also refered in this project. Other than that, thanks to the development of the neural networks, many other meaningful attempts are also taken such as input convex neural network (ICNN) structure \cite{amos2017input} Different results would be listed to show the effect.
+  In this report, we proposed several solutions to the well-known but unsolved Witsenhausen counterexample \cite{witsenhausen1968counterexample}. There have been some meaningful attempts to detect the global minima of the minimization problem, such as Lee \cite{lee2001witsenhausen} and M. Barglietto \cite{baglietto2001numerical}. Some of their manipulations are also refered in this project. Other than that, thanks to the development of the neural networks, many other meaningful attempts are also taken such as input convex neural network (ICNN) structure \cite{amos2017input}. Different results would be listed to show the effect.
 
 \section{The Witsenhausen Counterexample}
 
-The Witsenhausen counterexample has been outstanding for more than 50 years. It is formulated by Hans Witsenhausen in 1968.\cite{witsenhausen1968counterexample} It is a counterexample to a natural conjecture that in a system with linear dynamics, Gaussian disturbance, and quadratic cost,affine control laws are optimal to minimize the cost. However, Witsenhausen courterexample, shown in figure below,
+The Witsenhausen counterexample has been outstanding for more than 50 years. It is formulated by Hans Witsenhausen in 1968\cite{witsenhausen1968counterexample}. It is a counterexample to a natural conjecture that in a system with linear dynamics, Gaussian disturbance, and quadratic cost,affine control laws are optimal to minimize the cost. However, Witsenhausen courterexample, shown in figure below,
 \begin{figure}[htp]
     \centering
     \includegraphics[width=6cm]{images/Wits_definition.png}
     \caption{Witsenhausen couterexample}
     \label{fig:definition}
 \end{figure}
-has nonlinear control laws that outperform all linear laws.
+has nonlinear control laws that outperform all linear laws. As in the Fig.\ref{fig:definition}, the input $x_0$ samples from a one dimensianal Gaussian distribution with mean 0 and standard deviation $\sigma$. The noise $N$ also independently samples from $\mathcal{N}(0,1) $ Our goal is to design the $f(x)$ and $g(x)$ so that the output $x_2$ could be as closed to 0 as possible and the $C_1$ controller cost could be minimized in the same time.
 \begin{equation}
     f(x)=\gamma_1(x)+x \hspace{1cm} g(x)=\gamma_2(x)
 \end{equation}
 
-As a result, $f(x_0)=x_1$ and $g(x_1+z)=u_2$. Out goal is to minimize the quadratic cost:$k^{2} \E [U_1^{2}]+\E[X_2^{2}]$, which can also be written as 
+As a result, $f(x_0)=x_1$ and $g(x_1+z)=u_2$. Out goal is to minimize the quadratic cost: $k^{2} \E [U_1^{2}]+\E[X_2^{2}]$, which can also be written as 
 \begin{equation}\label{eq:minJ}
 \begin{aligned}
 \min_{f,g}J^{C}(f,g):=&k^{2}\E[f(X_0)-X_0]^{2}+\\
-&\E[(f(X_0)-g(f(X_0)+N))^{2}]
+&\E[(f(X_0)-g(f(X_0)+N))^{2}].
 \end{aligned}
 \end{equation}
-
-In equation \eqref{eq:minJ}, there is a parameter $k^2$, which in fact determines the cost gap between the linear controller and nonlinear controller\cite{baglietto2001numerical}. If $k^2$ is smaller, the gap is bigger. For better comparison with the results got by previous researchers, $k^2$ is set as 0.04 in this report.
-
-However, there is not only one way to represent costs.\cite{wu2011witsenhausen} We can view Witsenhausen problem from the optimal transport theory. In this way, we could rewrite the cost in another equivalent way:
-{
-% \setstretch{2.0}
-\begin{equation}\label{eq:Jw1}
-  \begin{aligned}
-&\min_{Q}J^{W}(f,g)\\
-:=&k^{2}W_2(P,Q)^{2}+mmse(Q,\sigma^2)\\
-:=&k^{2}W_2(P,Q)^{2}+\min_{g}\underset{ \underset{N \sim \mathcal{N}(0,1)}{X_1\sim Q} }{\mathbb{E}}[(g(X_1+N)-X_1)^2]
+Moreover, If we take
+\begin{equation}
+\begin{aligned}
+  \operatorname{mmse}\left(X, \sigma^{2}\right) & \triangleq \min _{g} \mathbb{E}\left[(X-g(\sigma X+N))^{2}\right],
   \end{aligned}
 \end{equation}
-}
+then
+\begin{equation}\label{eq:minJ_more}
+  \begin{aligned}
+  &\min_{f,g}J^{C}(f,g)\\
+  =&\inf _{f} k^{2} \mathbb{E}\left[\left(X_{0}-f\left(X_{0}\right)\right)^{2}\right]+\operatorname{mmse}\left(f\left(X_{0}\right), 1\right)
+  \end{aligned}
+  \end{equation}
+
+In equation \eqref{eq:minJ}, there is a parameter $k^2$, which in fact determines the cost gap between the linear controller and nonlinear controller \cite{baglietto2001numerical}. If $k^2$ is smaller, the gap is bigger. For better comparison with the results got by previous researchers, $k^2$ is set as 0.04 in this report.
+
+However, there is not only one way to represent costs \cite{wu2011witsenhausen}. We can view Witsenhausen problem from the optimal transport theory. Denote $P_{X_0}=P, P_{X_1}=Q$, we could rewrite the cost:
+\begin{align}
+  &\min_{Q}J^{W} \nonumber\\
+  =&k^{2}W_2(P,Q)^{2}+\operatorname{mmse}(Q,1) \label{eq:minJ_w1} \\
+  =&k^{2}W_2(P,Q)^{2}+\min_{g}\underset{ \underset{N \sim \mathcal{N}(0,1)}{X_1\sim Q} }{\mathbb{E}}[(g(X_1+N)-X_1)^2]
+\end{align}
 which is the same with
-
 \begin{equation}\label{eq:Jw2}
-\min_{Q,g}=k^{2}W_2(P,Q)^{2}+\underset{ \underset{N \sim \mathcal{N}(0,1)}{X_1\sim Q} }{\mathbb{E}}[(g(X_1+N)-X_1)^2]
+\min_{Q,g}=k^{2}W_2(P,Q)^{2}+\underset{ \underset{N \sim \mathcal{N}(0,1)}{X_1\sim Q} }{\mathbb{E}}[(g(X_1+N)-X_1)^2],
 \end{equation}
+where $W_2$ means Wasserstein-2 distance.The reason we could transit equation \eqref{eq:minJ_more} as equation \eqref{eq:minJ_w1} is Kantorovich's generalization of Monge's original optimal transport problem.
 
-where $W_2$ means Wasserstein-2 distance. Compared to the equation \eqref{eq:Jw1}, equation \eqref{eq:minJ} could be called as classic Witsenhausen cost.
+Compared to the equation \eqref{eq:minJ}, equation \eqref{eq:minJ} could be called as classic Witsenhausen cost. 
 
 In addition, it is already known that $f(x)$ must have some strict property to be optimal \cite{wu2011witsenhausen} :
 \begin{adjustwidth}{0.5cm}{}
@@ -83,9 +91,9 @@ In addition, it is already known that $f(x)$ must have some strict property to b
 This means $f$ has to be smooth enough. But interestingly, the neural network(NN) optimized result is exactly opposite from this property. The sharper the $f$ becomes (opposite to smooth), the smaller the cost is.
 
 \section{Basic Neural Network Setup}
-The whold process could be generally separated into 4 parts:\\
-1) Initialization setup for the $f$ net and $g$ net\\
-2) Train the NNs using Gaussian distribution data. In this report, all data keeps the consistency: $x_0\sim \mathcal{N} (0,\sigma^2)$, where $\sigma=5$, and $N\sim \mathcal{N} (0,1)$. \\
+The whole process could be generally separated into 3 parts:\\
+1) Initialization setup for the $f$ net and $g$ net;\\
+2) Train the NNs using Gaussian distribution data. In this report, all data keeps the consistency: $x_0\sim \mathcal{N} (0,\sigma^2)$, where $\sigma=5$, and $N\sim \mathcal{N} (0,1)$; \\
 3) Fix $f$ net and continue to train $g$ net.
 
 \subsection{Neural Network Architecture}
@@ -93,7 +101,7 @@ The whold process could be generally separated into 4 parts:\\
 For $f$ net and $g$ net, all layers are linear layers and activated by CELU\cite{barron2017continuously} function, i.e. 
 % CELU($x$)=max(0,$x$)+min(0,$$\alpha*($$exp($$x/\alpha)-1))$$
 \begin{equation}
-  CELU(x)=max(0,x)+min(0,\alpha*(exp(x/\alpha)-1))
+  CELU(x)=\max(0,x)+\min(0,\alpha*(\exp(x/\alpha)-1))
 \end{equation}
 is used since it makes the activation function continuously differentiable and improves the performance in initialization setup process. It is worth noting that CELU is convex and monotone increasing activation function.
 For $f$ net structure, we tried ICNN as $f$ net's integral function:$F$ net, i.e. $f$ NN works as the derivative function of the function represented by $F$ NN. Why can we do this? Because $f$ is proved to be monotone, so $F$ must be convex. And ICNN could has the ability to represent all convex functions. That's why we choose ICNN to represent $F$ here. In this way, $x_1$ in Fig.1 is got from taking back propogation of the $F$ NN from the output to the input. The fully ICNN structure is as below and we stricly used the same structure.
@@ -104,16 +112,15 @@ For $f$ net structure, we tried ICNN as $f$ net's integral function:$F$ net, i.e
   \label{fig:definition}
 \end{figure}
 
-The function $f$ is convex provided that all $W_{1:k-1}^{(z)}$ are non-negative and all activation functions are convex and non-decreasing.\cite{amos2017input} To be noticed, sometimes we cancel the non-negative weight restriction but the monotone property of $f$ NN doesn't change. In the meantime, we could use this as a way to improve the loss decreasing.
+The function $f$ is convex provided that all $W_{1:k-1}^{(z)}$ are non-negative and all activation functions are convex and non-decreasing \cite{amos2017input}. To be noticed, sometimes we cancel the non-negative weight restriction but the monotone property of $f$ NN doesn't change. In the meantime, we could use this as a way to improve the loss decreasing.
 
 We also have tried ResNet\cite{he2016deep} since it performs much better than ordinary linear layer NNs. 
 
 On the other hand, the $g$ net is treated as normal linear layer NN if $f$ is ICNN structure and ResNet if $f$ is ReNet. The experiment proves that $f$ net is much more important than $g$ net for loss decreasing.
 
 \subsection{Optimizer}
-For updating parameters of two NNs, we first use Stochastic Gradient Descent (SGD) and then used ADAM. In comparison, SGD performs much slower and becomes not stable while entering plateau of loss decreasing. ADAM increases the stability and speed a lot. So we focus on the better optimizer compared to ADAM later. There were a lot of variation of ADAM during the past several years. We mainly care whether the optimizer could lead the NN to the global optimizer. Some outstanding optimizers came out like AdaBound\cite{luo2019adaptive}, RAdam\cite{liu2019variance} and Yogi\cite{zaheer2018adaptive}. \footnote{The pytorch optimizer source code could be found here: https://github.com/jettify/pytorch-optimizer}
-We tried to use RAdam and Yogi but found Yogi didn't work well in this problem picture at all. So we finally proposed to use RAdam for main part of the project. But we will still list the result of RMSprop and Adam as the comparison.
-
+For updating parameters of two NNs, we first use Stochastic Gradient Descent (SGD) and then used ADAM. In comparison, SGD performs much slower and becomes not stable while entering plateau of loss decreasing. ADAM increases the stability and speed a lot. So we focus on the better optimizer compared to ADAM later. There were a lot of variation of ADAM during the past several years. We mainly care whether the optimizer could lead the NN to the global optimizer. Some outstanding optimizers came out like AdaBound \cite{luo2019adaptive}, RAdam \cite{liu2019variance} and Yogi \cite{zaheer2018adaptive}. \footnote{The pytorch optimizer source code could be found here: https://github.com/jettify/pytorch-optimizer}
+We tried to use RAdam and Yogi but found Yogi didn't work well in this problem picture at all. So we finally proposed to use RAdam for main part of the project. But we will still list the results of RMSprop and Adam as the comparison.
 \subsection{Initialization}
 The $f$ net and $g$ net both have initialization. According to the previous researchers' work, we choose the 7-step-stair as basic two NN initialization. This is refering to the best result got from past researchers and the step parameters are from Yu-Chi Ho's group\cite{liu2019variance} as below:
 \begin{equation}\label{7-stairs}
@@ -165,7 +172,7 @@ It is worth mentioning that while doing initialization training for ICNN $f$ net
   \label{fig:$f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly}
 \end{figure}
 
-Secondly, if we treat the loss criteria as comparison between $F$ with the piecewise linear function $F_0$, the $f_0$ would becomes much better as Fig.\ref{fig:f_0 from initialization process with criteria between $F_0$ and ideal integral function}:
+Secondly, if we treat the loss criteria as comparison between $F$ with the piecewise linear function $F_0$, the $f_0$ would becomes much better as Fig.\ref{fig:f_0 from initialization process with criteria between $F_0$ and ideal integral function}.
 
 \begin{figure}
   \centering
@@ -186,7 +193,7 @@ Secondly, if we treat the loss criteria as comparison between $F$ with the piece
 
 % \subsection{$J(f,g)$ calculation}
 \subsection{Computational Graph}
-From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as Fig.\ref{fig:classic comp graph}:
+From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as Fig.\ref{fig:classic comp graph}.
 \begin{figure}[htp]
   \centering
   \includegraphics[width=8cm]{computational_graph/J_C.png}
@@ -337,10 +344,12 @@ This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 
 \section{$J^W$ Experiment Result}
 In this section, we don't have a well-organized initializations for $f$ as there is no previous paper reference. But the result is very closed to the linear controller. This proves that the Wasserstein distance formula still needs some great initializations to improve the solution, which could be saved for the future research.\\
 
-1) \textbf{No initialization}:\\
+1) \textbf{No initialization}:
+
 The same as the $J^C$, the cost goes to 0.961\\
 
 1) \textbf{Train $h$ firstly}:
+
 If we first train $h$ with the hope that it could get a better initialization, then the cost still goes to 0.961.
 
 \section{Discussion}
