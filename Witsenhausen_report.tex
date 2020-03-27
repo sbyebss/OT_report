@@ -132,7 +132,7 @@ The $f$ net and $g$ net both have initialization. According to the previous rese
           19.9 & 16.65 \leq x.
   \end{cases}
 \end{equation}
-According to symmetry, the $x \geq 0$ part of $f(x)$ could be obtained. We also tried segmented stair, which parameters are also obtained from Yu-Chi Ho's group\cite{lee2001witsenhausen}:
+According to symmetry, the $x \geq 0$ part of $f(x)$ could be obtained. We also tried segmented stair, which parameters are also obtained from Yu-Chi Ho's group\cite{lee2001witsenhausen}.
 \begin{equation}\label{segmented-7-stairs}
   f(x)=
   \begin{cases}
@@ -163,7 +163,7 @@ We mark $f_0$ as the result from initialization process for $f$ and the same for
   \label{fig:The corresponding $F_0$ when $f_0$ is taken as Equation}
 \end{figure}
 
-It is worth mentioning that while doing initialization training for ICNN $f$ net,we are not training $f_0$ directly but training $F_0$. So the loss criteria in the initialization training may be two ways. Firstly, if we get the loss by comparing $F$ NN's derivative with the equation \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as Fig.\ref{fig:$f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly}:
+It is worth mentioning that while doing initialization training for ICNN $f$ net,we are not training $f_0$ directly but training $F_0$. So the loss criteria in the initialization training may be two ways. Firstly, if we get the loss by comparing $F$ NN's derivative with the equation \eqref{7-stairs} or \eqref{segmented-7-stairs} directly, the trained $f$ would be very bad which only shapes 2-step as Fig.\ref{fig:$f_0$ from initialization process with criteria between $F_0$ derivative and the 7-stairs-init directly}.
 
 \begin{figure}[htp]
   \centering
@@ -193,7 +193,7 @@ Secondly, if we treat the loss criteria as comparison between $F$ with the piece
 
 % \subsection{$J(f,g)$ calculation}
 \subsection{Computational Graph}
-From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as Fig.\ref{fig:classic comp graph}.
+From the classic view of Witsenhausen problem\eqref{eq:minJ}, the loss is directly taking MSE loss between the compared batch. So the computational graph is shown as Fig.\ref{fig:classic comp graph}. In the computational graph, the grey box means the NN function or pytorch inserted function. The white box means the variables.
 \begin{figure}[htp]
   \centering
   \includegraphics[width=8cm]{computational_graph/J_C.png}
@@ -322,7 +322,7 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
           \label{fig:fixedFfunction}
       \end{figure}
   
-  In the remark, we continue to update only one NN while fixing another NN which was saved from the lowest cost point. The final $f$ result for the last array is shown in Fig.\ref{fig:Table2_last_column_continue_to_update_f}:
+  In the remark, we continue to update only one NN while fixing another NN which was saved from the lowest cost point. The final $f$ result for the last array is shown in Fig.\ref{fig:Table2_last_column_continue_to_update_f}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=6cm]{images/Table2_last_column_continue_to_update_f.png}
@@ -333,7 +333,7 @@ For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers.
 We could tell from the Fig.\ref{fig:Table2_last_column_continue_to_update_f} that the $f$ is stuck in 5-step-stair, which is local minima compared to better result got from 7-step-stair. In fact, this is also closely related to the $x_0$ distribution. Because $x_0$ has very little data which locates bigger than 15 or smaller than -15. So it's hard for optimizer to detect a good shape in those areas.
 
 \subsection{ResNet structure}
-This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 300n/l, $g$ as 6 layers and 300n/l, $J^C\rightarrow$ 0.2153 as Fig.\ref{fig:resnet_best_result}:
+This didn't behave better than ICNN structure. While taking $f$ as 6 layers and 300n/l, $g$ as 6 layers and 300n/l, $J^C\rightarrow$ 0.2153 as Fig.\ref{fig:resnet_best_result}.
 \begin{figure}[htp]
   \centering
   \includegraphics[width=6cm]{images/resnet_best_result.png}
