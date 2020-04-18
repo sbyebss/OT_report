@@ -97,7 +97,7 @@ The whole process could be generally separated into 3 parts:\\
 3) Fix $f$ net and continue to train $g$ net.
 
 \subsection{Neural Network Architecture}
- Basically, two NNs are taken to represent $f$ and $g$ seperately using Pytorch structure. \footnote{The code of this project could be found at: https://github.com/sbyebss/Witsenhausen}
+ Basically, two NNs are taken to represent $f$ and $g$ separately using Pytorch structure. \footnote{The code of this project could be found at: https://github.com/sbyebss/Witsenhausen}
 For $f$ net and $g$ net, all layers are linear layers and activated by CELU\cite{barron2017continuously} function, i.e. 
 % CELU($x$)=max(0,$x$)+min(0,$$\alpha*($$exp($$x/\alpha)-1))$$
 \begin{equation}
@@ -122,7 +122,7 @@ On the other hand, the $g$ net is treated as normal linear layer NN if $f$ is IC
 For updating parameters of two NNs, we first use Stochastic Gradient Descent (SGD) and then used ADAM. In comparison, SGD performs much slower and becomes not stable while entering plateau of loss decreasing. ADAM increases the stability and speed a lot. So we focus on the better optimizer compared to ADAM later. There were a lot of variation of ADAM during the past several years. We mainly care whether the optimizer could lead the NN to the global optimizer. Some outstanding optimizers came out like AdaBound \cite{luo2019adaptive}, RAdam \cite{liu2019variance} and Yogi \cite{zaheer2018adaptive}. \footnote{The pytorch optimizer source code could be found here: https://github.com/jettify/pytorch-optimizer}
 We tried to use RAdam and Yogi but found Yogi didn't work well in this problem picture at all. So we finally proposed to use RAdam for main part of the project. But we will still list the results of RMSprop and Adam as the comparison.
 \subsection{Initialization}
-The $f$ net and $g$ net both have initialization. According to the previous researchers' work, we choose the 7-step-stair as basic two NN initialization. This is refering to the best result got from past researchers and the step parameters are from Yu-Chi Ho's group\cite{liu2019variance} as below:
+The $f$ net and $g$ net both have initialization. According to the previous researchers' work, we choose the 7-step-stair as basic two NN initialization. This is refering to the best result got from past researchers and the step parameters are from Yu-Chi Ho's group\cite{lee2001witsenhausen} as below:
 \begin{equation}\label{7-stairs}
     f(x)=
     \begin{cases}
@@ -210,7 +210,7 @@ However, if choosing the optimal transport expression \eqref{eq:Jw2}, the comput
 \end{figure}
 
 \subsection{Test Data Set}
-In the process of training, we choose to get the test set loss for every 1000 epoches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If take the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
+In the process of training, we choose to get the test set loss for every 1000 mini batches. Therefore, a good test data size need to be chosen. The variance of the empirical test loss is expected to be less than $0.005^2$ to be compared successfully with previous results. If taking the test data size as $5\times10^5$, the empirical variance of the test loss is 8.65791389375e-7. Finally, we chose the test data size as $1\times10^5$
 
 \section{$J^C$ Experiment Result}
 If there is no more specification, the following results are corresponding to the classic cost expression \eqref{eq:minJ}. The detailed computation graph could be seen in 3.4 section.
@@ -224,7 +224,7 @@ The $f$ net could only go to two-step and total loss $J$ is around 0.36. So does
 
 For this part, the $f$ net has 6 layers  and the $g$ net has only 3 layers. 
 \begin{table}[htbp]
-  \caption{$J^{C}(f,g)$ Comparison When $f$ is with 7-step-stair Init and ICNN Structure }
+  \caption{$J^{C}(f,g)$ comparison when $f$ is with 7-step-stair Init and ICNN Structure }
   \begin{center}
   \begin{tabular}{|c|c|}
   \hline
